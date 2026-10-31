@@ -5,7 +5,7 @@
 <title>Pawan Sastry | Product Leadership Portfolio</title>
 <meta name="description" content="Pawan Sastry — product leader across enterprise SaaS, AI, data platforms and analytics. Selected work, business outcomes and career experience.">
 <meta property="og:title" content="Pawan Sastry | Product Leadership Portfolio"><meta property="og:description" content="Building products, scaling platforms and driving business impact across enterprise SaaS, data and AI.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-zTyfH/L/YD0Yp9aU8zmTiUJbXRt4aqvRbpqQg7c9XH4=' 'sha256-S6v3ovq1OiftS/yaWU8yyEx7gZLVcQd+Ggx+AqDUvWQ='; style-src 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-zTyfH/L/YD0Yp9aU8zmTiUJbXRt4aqvRbpqQg7c9XH4=' 'sha256-yeMGV3A2u7g4iBBEvT2DcqGte1u7XZnR8VoxhgFp86Q='; style-src 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
 <meta name="theme-color" content="#172653">
 <script>
@@ -79,6 +79,7 @@ img{-webkit-user-drag:none}
 .cicon:hover{transform:translateY(-2px);background:var(--lime);border-color:var(--lime);color:#172653}
 .cicon.primary{background:var(--lime);border-color:var(--lime);color:#172653}
 .cicon svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}.cicon svg.solid{fill:currentColor;stroke:none}
+@media print{body{display:none}}
 /* drawer: the same dialog, anchored to the right edge for the disciplines */
 .modal.drawer{margin:0 0 0 auto;width:min(520px,calc(100vw - 28px));height:100dvh;max-height:100dvh;border-width:0 0 0 1px;border-radius:var(--radius) 0 0 var(--radius);padding:28px 28px 32px}
 .modal.drawer[open]{animation:dslide .28s cubic-bezier(.22,.8,.3,1)}
@@ -257,6 +258,11 @@ html:has(.modal[open]){overflow:hidden}
   });
 
   var qrail = document.getElementById('quoteRail');
+
+  // deter casual copying: no context menu, no dragging images out
+  ['contextmenu', 'dragstart'].forEach(function (t) {
+    document.addEventListener(t, function (e) { e.preventDefault(); });
+  });
 
   // one dialog: a right drawer per discipline, a centred pop-up per recommendation
   var modal = document.getElementById('modal'), mviews = modal.querySelectorAll('.mview'), qholdPaused = false;

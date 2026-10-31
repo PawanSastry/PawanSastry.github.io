@@ -18,6 +18,10 @@ The page has a strict Content Security Policy that lists a SHA-256 hash for each
 
 ## Changelog
 
+### 2026-11-01: Copy deterrents
+
+- Disabled the right-click menu and image dragging, and made the page print blank. These deter casual copying only; browsers cannot block screenshots.
+
 ### 2026-11-01: Major overhaul
 
 - Rebuilt the page layout and visual design, with light and dark themes.
