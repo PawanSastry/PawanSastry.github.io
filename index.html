@@ -1,768 +1,191 @@
 <!doctype html>
 <html lang="en" data-theme="light">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Pawan Sastry Portfolio</title>
-<meta name="description" content="Pawan Sastry, Senior Product Manager in Hyderabad. Data, analytics and AI products for B2B enterprise SaaS.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-zTyfH/L/YD0Yp9aU8zmTiUJbXRt4aqvRbpqQg7c9XH4=' 'sha256-79pOOW3ytSO6Ldod0kOxOqqqxRRKfmUWLQxDkbjljOQ='; style-src 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self'; base-uri 'none'; form-action 'none'">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Pawan Sastry | Product Leadership Portfolio</title>
+<meta name="description" content="Pawan Sastry — product leader across enterprise SaaS, AI, data platforms and analytics. Selected work, business outcomes and career experience.">
+<meta property="og:title" content="Pawan Sastry | Product Leadership Portfolio"><meta property="og:description" content="Building products, scaling platforms and driving business impact across enterprise SaaS, data and AI.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-zTyfH/L/YD0Yp9aU8zmTiUJbXRt4aqvRbpqQg7c9XH4=' 'sha256-S6v3ovq1OiftS/yaWU8yyEx7gZLVcQd+Ggx+AqDUvWQ='; style-src 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
-<meta name="theme-color" content="#1B2A63">
+<meta name="theme-color" content="#172653">
 <script>
 /* Set the theme before first paint so the page never flashes the wrong one. */
 (function () { var t; try { t = localStorage.getItem('theme'); } catch (e) {} t = new URLSearchParams(location.search).get('theme') || t; document.documentElement.dataset.theme = t === 'dark' ? 'dark' : 'light'; })();
 </script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
 <style>
-/* Layout concept: split hero, card grids and a tabbed resume on a navy and lime desk, with cream cards, an icon rail, quick-action tools, curved photo edges and blue chips. */
-:root {
-  --page: #1B2A63;
-  --lime: #B9CC2C;
-  --slate: #6E7CA8;
-  --on-page: #FFFFFF;
-  --on-page-2: #D5DCEF;
-  --panel: #F7F5F0;
-  --panel-2: #FFFFFF;
-  --ink: #20242C;
-  --text: #434953;
-  --muted: #5F6672;
-  --line: #E2DFD8;
-  --accent: #1C3FAA;
-  --on-accent: #FFFFFF;
-  --photo: linear-gradient(170deg, #BFCB4A, #6F8BE0);
-  --art: linear-gradient(135deg, #1C3FAA, #2F62D9);
-  --art-ink: #DDEB5E;
-  --tool: #4A4F5C;
-  --shadow: 0 14px 34px rgba(10, 16, 44, .32);
-  --font: "Source Sans 3", "Segoe UI", Arial, sans-serif;
-  color-scheme: light;
-}
-[data-theme="dark"] {
-  --page: #17204A;
-  --lime: #A9BC2A;
-  --slate: #56648F;
-  --panel: #27325C;
-  --panel-2: #303C6B;
-  --ink: #FFFFFF;
-  --text: #E3E7F1;
-  --muted: #BFC7DA;
-  --line: #414D7C;
-  --accent: #C9DE4A;
-  --on-accent: #17204A;
-  --photo: linear-gradient(170deg, #C9DE4A, #7F9BEE);
-  --art: linear-gradient(135deg, #34437E, #4A5FA8);
-  --art-ink: #DDEB5E;
-  --tool: #3A4575;
-  --shadow: 0 14px 34px rgba(6, 10, 30, .45);
-  color-scheme: dark;
-}
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: 28px; }
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation: none !important; transition: none !important; } }
-body { margin: 0; background: var(--page); color: var(--text); font-family: var(--font); font-size: 17px; line-height: 1.55; overflow-x: hidden; transition: background .25s, color .25s; }
-body::before { content: ""; position: fixed; z-index: 0; left: -14vw; top: -26vw; width: 46vw; height: 46vw; border-radius: 50%; background: var(--lime); }
-body::after { content: ""; position: fixed; z-index: 0; right: -10vw; bottom: -24vw; width: 40vw; height: 40vw; border-radius: 50%; background: radial-gradient(circle at 30% 30%, var(--lime) 0 54%, var(--slate) 54.5%); }
-img { max-width: 100%; display: block; } [hidden] { display: none !important; }
-a { color: inherit; }
-:focus-visible { outline: 2px solid var(--lime); outline-offset: 2px; }
-h1, h2, h3, h4 { margin: 0; color: var(--ink); text-wrap: balance; }
-.sprite { position: absolute; width: 0; height: 0; }
-.ic { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; flex: none; }
-.ic.solid { fill: currentColor; stroke: none; }
-.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
-.skip { position: absolute; left: -999px; top: 8px; background: var(--panel-2); color: var(--ink); padding: 8px 14px; z-index: 50; }
-.skip:focus { left: 16px; }
-.page { position: relative; z-index: 1; padding: 0 76px 0 92px; }
-.inner { max-width: 1160px; margin: 0 auto; }
-.card { background: var(--panel); box-shadow: var(--shadow); }
+:root{--navy:#172653;--navy2:#223568;--lime:#d4e65b;--paper:#f7f7f3;--white:#fff;--ink:#18213a;--body:#4b5568;--muted:#5a6478;--line:#e3e7ed;--blue:#3154a5;--soft:#edf1f8;--card:#fff;--shadow:0 12px 34px rgba(18,32,68,.08);--radius:18px;--max:1160px;color-scheme:light}
+[data-theme=dark]{--paper:#10182e;--white:#192443;--ink:#f4f6fb;--body:#d0d7e6;--muted:#aab5ca;--line:#303d60;--blue:#d4e65b;--soft:#202d50;--card:#192443;--shadow:0 14px 34px rgba(0,0,0,.22);color-scheme:dark}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;background:var(--paper);color:var(--body);font:16px/1.65 'DM Sans',sans-serif}a{color:inherit}button{font:inherit}.wrap{width:min(var(--max),calc(100% - 48px));margin:auto}.topbar{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font:800 16px 'Manrope';letter-spacing:-.04em;color:var(--ink);text-decoration:none}.brand span{color:var(--blue)}.navlinks{display:flex;align-items:center;gap:24px}.navlinks a{font-size:13px;font-weight:700;text-decoration:none;color:var(--body)}.navlinks a:hover{color:var(--blue)}.nav-actions{display:flex;align-items:center;gap:9px}.iconbtn{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:50%;width:38px;height:38px;cursor:pointer}.menu-toggle{display:none}.hero{background:var(--navy);color:#fff;padding:76px 0 68px;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:560px;height:560px;border-radius:50%;right:-170px;top:-280px;border:1px solid rgba(212,230,91,.22);box-shadow:0 0 0 54px rgba(212,230,91,.035),0 0 0 108px rgba(212,230,91,.025)}.hero-grid{display:grid;grid-template-columns:1.45fr .55fr;gap:64px;align-items:center;position:relative;z-index:1}.eyebrow{font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:800;color:var(--lime)}h1,h2,h3{font-family:'Manrope',sans-serif;line-height:1.16;margin:0;color:var(--ink);letter-spacing:-.035em}.hero h1{font-size:clamp(42px,6vw,68px);color:white;max-width:780px;margin:18px 0}.hero h1 span{color:var(--lime)}.hero-lede{font-size:18px;color:#e0e6f4;max-width:690px;margin:0}.hero-sub{font-size:14px;color:#b9c5df;margin:14px 0 0}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 18px;border-radius:8px;text-decoration:none;font-weight:700;font-size:13px;border:1px solid transparent;transition:.2s}.btn:hover{transform:translateY(-2px)}.btn-primary{background:var(--lime);color:#172653}.btn-ghost{border-color:#8290b4;color:white}.btn-light{background:var(--card);color:var(--ink);border-color:var(--line)}.portrait{width:min(250px,100%);aspect-ratio:4/5;border-radius:120px 120px 22px 22px;background:linear-gradient(145deg,#d4e65b,#5c79bd);margin-left:auto;overflow:hidden;position:relative}.portrait img{width:100%;height:100%;object-fit:cover}.portrait .initials{position:absolute;inset:0;display:grid;place-items:center;color:#172653;font:800 64px 'Manrope'}
 
-/* rail */
-.rail { position: fixed; z-index: 20; left: 20px; top: 50%; transform: translateY(-50%); display: grid; gap: 10px; }
-.rail .box { background: var(--panel); box-shadow: var(--shadow); }
-.rail button, .rail a { position: relative; width: 44px; height: 46px; display: grid; place-items: center; background: none; border: 0; padding: 0; color: var(--ink); cursor: pointer; text-decoration: none; transition: color .2s; }
-.rail a:hover, .rail a.on { color: var(--accent); }
-.rail .box.links { padding-block: 6px; }
-.rail a span { position: absolute; left: calc(100% + 8px); top: 50%; transform: translateY(-50%); background: var(--panel-2); color: var(--ink); box-shadow: var(--shadow); font-size: 14px; font-weight: 600; padding: 3px 10px; white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity .15s; z-index: 5; }
-.rail a:hover span, .rail a:focus-visible span, .rail.open a span { opacity: 1; }
+section{padding:88px 0}.section-head{max-width:700px;margin-bottom:34px}.section-head .eyebrow{color:var(--blue)}.section-head h2{font-size:clamp(30px,4vw,42px);margin:10px 0}.section-head p{margin:0;color:var(--muted);font-size:16px}.impact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.impact-card,.experience-card,.quote-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}.impact-card{padding:25px;min-height:225px}.impact-card.featured{border-top:4px solid var(--blue)}.card-kicker{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);font-weight:800}.impact-number{font:800 38px 'Manrope';color:var(--blue);letter-spacing:-.05em;margin:13px 0 5px}.impact-card h3{font-size:19px;margin:8px 0}.impact-card p{font-size:14px;margin:0;color:var(--body)}.impact-type{display:inline-block;margin-top:16px;padding:5px 9px;border-radius:5px;background:var(--soft);font-size:10px;font-weight:800;color:var(--blue);text-transform:uppercase;letter-spacing:.06em}
+.case-section{background:var(--soft)}
+.experience-card{padding:22px 24px}.exp-head{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}.exp-head h3{font-size:19px}.exp-role{font-size:13px;font-weight:700;color:var(--blue);margin-top:4px}.date{font-size:11px;font-weight:800;color:var(--muted);white-space:nowrap}.experience-card p{font-size:13px;margin:10px 0 0}.experience-card ul{padding-left:18px;margin:6px 0 0;font-size:13px}.side-stack{display:grid;align-content:start;gap:16px}.side-panel{background:var(--soft);border-radius:var(--radius);padding:23px}.side-panel h3{font-size:17px;margin-bottom:14px}.credential{padding:10px 0;border-top:1px solid var(--line);font-size:12px}.credential b{display:block;color:var(--ink)}.skill-groups{display:grid;gap:14px}.skill-group h4{font:700 11px 'Manrope';color:var(--blue);margin:0 0 8px}.chips{display:flex;flex-wrap:wrap;gap:6px}.chip{padding:6px 9px;background:var(--card);border:1px solid var(--line);border-radius:6px;font-size:11px;font-weight:600;color:var(--body)}
+.recommendations{background:var(--navy);color:#fff}.recommendations .section-head h2{color:#fff}.recommendations .section-head p{color:#c3cce0}.quote-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}.quote-card{background:#223568;border-color:#344779;padding:23px;color:#e6ebf5}.quote-card blockquote{font-size:14px;line-height:1.7;margin:0 0 18px}.quote-by{border-top:1px solid #40517d;padding-top:13px}.quote-by b{display:block;color:white;font-size:13px}.quote-by span{font-size:11px;color:#b9c5df}.contact-panel{background:var(--navy);border-radius:22px;padding:42px;color:#fff;display:flex;justify-content:space-between;align-items:center;gap:30px}.contact-panel h2{font-size:clamp(28px,4vw,40px);color:white;margin:8px 0}.contact-panel p{margin:0;color:#c8d2e8;max-width:560px}.contact-actions{display:flex;gap:10px;flex-wrap:wrap}.contact-actions .btn-ghost{white-space:nowrap}footer{padding:28px 0;color:var(--muted);font-size:12px}.footer-row{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.footer-links{display:flex;gap:18px}.footer-links a{text-decoration:none;font-weight:700}.footer-links a:hover{color:var(--blue)}
+@media(max-width:900px){.navlinks{gap:13px}.navlinks a{font-size:11px}.hero-grid{gap:30px}.impact-grid{grid-template-columns:repeat(2,1fr)}.side-stack{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:650px){.wrap{width:min(100% - 32px,var(--max))}.nav{height:62px}.menu-toggle{display:block}.navlinks{display:none;position:absolute;top:61px;left:0;right:0;background:var(--paper);border-bottom:1px solid var(--line);padding:14px 20px 20px;flex-direction:column;align-items:flex-start}.navlinks.open{display:flex}.navlinks a{font-size:14px}.hero{padding:54px 0 52px}.hero-grid{grid-template-columns:1fr;gap:26px}.portrait{width:145px;margin:0;grid-row:1;aspect-ratio:1;border-radius:50%}.portrait .initials{font-size:40px}.hero h1{font-size:43px;margin:13px 0}.hero-lede{font-size:16px}section{padding:62px 0}.impact-grid,.quote-grid{grid-template-columns:1fr}.impact-card{min-height:0}.side-stack{grid-template-columns:1fr}.contact-panel{padding:27px;display:block}.contact-actions{margin-top:22px}.exp-head{display:block}.date{display:block;margin-top:5px}.footer-row{display:block}.footer-links{margin-top:12px;flex-wrap:wrap}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
 
-/* tools */
-.tools { position: fixed; z-index: 10; right: 0; top: 50%; transform: translateY(-50%); display: grid; gap: 1px; box-shadow: var(--shadow); }
-.tools > * { width: 44px; height: 44px; display: grid; place-items: center; background: var(--tool); color: #FFFFFF; border: 0; padding: 0; cursor: pointer; text-decoration: none; transition: background .2s, color .2s; }
-.tools > *:hover { background: var(--lime); color: #1B2A63; }
-.tools .ic { width: 21px; height: 21px; }
-.theme .sun { display: none; } [data-theme="dark"] .theme .sun { display: block; } [data-theme="dark"] .theme .moon { display: none; }
+/* readability, states and merged sections */
+.skip{position:absolute;left:-999px;top:8px;background:var(--card);color:var(--ink);padding:8px 14px;z-index:50}.skip:focus{left:16px}
+:focus-visible{outline:2px solid var(--lime);outline-offset:2px}
+section{padding:68px 0}
+.navlinks a{font-size:14px;padding:6px 0;box-shadow:inset 0 -2px 0 transparent}.navlinks a.on{color:var(--blue);box-shadow:inset 0 -2px 0 var(--blue)}
+.btn{font-size:14px}.eyebrow{font-size:12px}.card-kicker,.impact-type{font-size:12px}
+.impact-card p{font-size:15px}
+.exp-role{font-size:14px}.date{font-size:13px}
+.experience-card ul{display:grid;gap:6px}.experience-card li b{color:var(--ink)}
+.side-panel h3{font-size:18px}.credential{font-size:13.5px}.skill-group h4{font-size:12px}.chip{font-size:13px}
 
-/* hero */
-.hero { padding-top: 84px; }
-.hero .inner { background: var(--panel); box-shadow: var(--shadow); display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 40px; align-items: end; }
-.hero-copy { min-width: 0; padding: 44px 0 44px 48px; align-self: center; }
-.kicker { font-size: 14px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
-.hero h1 { font-size: clamp(38px, 4.6vw, 56px); font-weight: 700; line-height: 1.12; margin-top: 12px; }
-.hero h1 em { font-style: normal; color: var(--accent); }
-.role { font-weight: 600; font-size: clamp(22px, 2.6vw, 30px); line-height: 1.25; color: var(--ink); margin: 6px 0 0; min-height: 1.25em; }
-.role i { font-style: normal; color: var(--accent); margin-right: 7px; }
-.caret { display: inline-block; width: 2px; height: .95em; background: var(--accent); margin-left: 3px; vertical-align: -.1em; animation: blink 1s steps(1) infinite; }
-@keyframes blink { 50% { opacity: 0; } }
-.lede { margin: 16px 0 0; max-width: 54ch; }
-.hero-links { display: flex; flex-wrap: wrap; gap: 22px 48px; margin-top: 30px; padding-top: 24px; border-top: 1px solid var(--line); }
-.hero-links h2 { font-size: 14px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
-.tiles { display: flex; gap: 10px; flex-wrap: wrap; }
-.tile { width: 46px; height: 46px; display: grid; place-items: center; border-radius: 50%; color: var(--on-accent); background: var(--accent); text-decoration: none; transition: transform .2s; }
-.tile:hover { transform: translateY(-2px); }
-.tile .ic { width: 21px; height: 21px; }
-.tile.label { width: auto; height: 46px; border-radius: 2px; padding: 0 12px; display: flex; align-items: center; gap: 7px; font-size: 15px; font-weight: 700; color: var(--ink); background: var(--panel-2); border: 1px solid var(--line); }
-.tile.label:hover { transform: none; }
-.tile.label .ic { color: var(--accent); width: 19px; height: 19px; }
-.photo { position: relative; width: 100%; aspect-ratio: 646 / 800; align-self: end; }
-.photo::before { content: ""; position: absolute; inset: 16% 0 0; background: var(--photo); }
-.photo img { position: relative; width: 100%; height: 100%; }
-.photo svg { position: absolute; left: 0; right: 0; bottom: -1px; width: 100%; height: 46px; fill: var(--panel); }
-
-/* sections */
-section.sec { padding-top: 72px; }
-.head { text-align: center; max-width: 660px; margin: 0 auto; }
-.head span { display: block; font-size: 14px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--lime); }
-.head h2 { font-size: clamp(32px, 4vw, 44px); font-weight: 700; line-height: 1.15; margin-top: 4px; color: var(--on-page); }
-.head h2::first-letter { color: var(--lime); }
-.head p { margin: 8px auto 0; color: var(--on-page-2); }
-.grid3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; margin-top: 38px; }
-.result, .int { padding: 26px 26px 28px; display: grid; gap: 8px; align-content: start; min-width: 0; transition: transform .25s; }
-.result:hover, .prod:hover, .int:hover { transform: translateY(-4px); }
-.tag { font-size: 13px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; color: var(--muted); }
-.big { font-weight: 700; font-size: clamp(40px, 4.2vw, 50px); line-height: 1.05; color: var(--accent); }
-.big small { display: block; font-size: 15px; font-weight: 500; color: var(--muted); margin-top: 4px; }
-.result h3, .prod h3 { font-size: 20px; font-weight: 700; line-height: 1.3; }
-.result p, .prod p, .int p { margin: 0; font-size: 16px; }
-.prod { padding: 0 0 24px; display: grid; gap: 8px; align-content: start; min-width: 0; overflow: hidden; transition: transform .25s; }
-.prod > :not(.art) { margin-inline: 24px; }
-.art { position: relative; aspect-ratio: 16 / 8; overflow: hidden; margin-bottom: 6px; background: var(--art); display: grid; place-items: center; }
-.art::after { content: ""; position: absolute; left: -8%; right: -8%; bottom: -30px; height: 50px; border-radius: 50%; background: var(--panel); transform: rotate(-2deg); }
-.art svg { position: relative; bottom: 8px; width: 30%; max-height: 66%; fill: none; stroke: var(--art-ink); stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; transition: transform .4s ease; }
-.prod:hover .art svg { transform: scale(1.07); }
-.prod .row { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; align-items: center; }
-.prod .row span:last-child { font-size: 14px; color: var(--muted); }
-.prod .row .tag { background: var(--accent); color: var(--on-accent); padding: 0 8px; border-radius: 2px; letter-spacing: .03em; text-transform: none; font-size: 14px; }
-.prod .stat { font-size: 15.5px; font-weight: 700; color: var(--accent); }
+.quote-card blockquote{font-size:15px}.quote-by b{font-size:14.5px}.quote-by span{font-size:13px}footer{font-size:13.5px}
+.recommendations .section-head .eyebrow{color:var(--lime)}.recommendations a{color:var(--lime);font-weight:700}
+.hero h1{margin:16px 0 6px}.role{font:700 clamp(21px,2.6vw,28px)/1.25 'Manrope',sans-serif;color:#fff;margin:0;min-height:1.25em}.role i{font-style:normal;color:var(--lime);margin-right:7px}
+.caret{display:inline-block;width:2px;height:.95em;background:var(--lime);margin-left:3px;vertical-align:-.1em;animation:blink 1s steps(1) infinite}@keyframes blink{50%{opacity:0}}
+.motto{font-weight:700;color:var(--lime);margin:10px 0 12px}
+.impact-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.impact-card{min-height:0;padding:20px;min-width:0;display:flex;flex-direction:column;border-top:4px solid var(--blue)}.impact-card .card-kicker{font-size:12px;letter-spacing:.09em;line-height:1.35}.impact-number{font-size:clamp(30px,2.8vw,34px);margin:10px 0 4px;white-space:nowrap}.impact-card h3{font-size:18px;margin:8px 0}.impact-card p{margin-bottom:14px}.impact-card .impact-type{margin-top:auto;align-self:flex-start;font-size:11.5px}
+.impact-sub{font-size:13.5px;font-weight:600;color:var(--muted);line-height:1.3}
 
 
-/* recommendations slider */
-.voices .vwrap { margin-top: 38px; }
-.vtrack { display: flex; gap: 22px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; padding: 4px 4px 30px; margin: -4px -4px -26px; }
-.vtrack::-webkit-scrollbar { display: none; }
-.vtrack:focus-visible { outline: 3px solid var(--lime); outline-offset: 2px; }
-.vcard { flex: 0 0 calc(50% - 11px); scroll-snap-align: start; padding: 30px 30px 26px; display: flex; flex-direction: column; gap: 18px; min-width: 0; }
-.vcard .qm { font-size: 76px; line-height: .55; height: 34px; font-weight: 700; color: var(--accent); font-family: Georgia, "Times New Roman", serif; }
-.vcard blockquote { margin: 0; font-size: 17px; line-height: 1.65; color: var(--text); flex: 1; }
-.vcard .by { display: flex; align-items: center; gap: 14px; border-top: 1px solid var(--line); padding-top: 18px; }
-.vcard .av { flex: none; width: 48px; height: 48px; border-radius: 50%; display: grid; place-items: center; font-weight: 700; font-size: 17px; background: var(--accent); color: var(--on-accent); }
-.vcard .vwho { display: grid; line-height: 1.35; min-width: 0; }
-.vcard .vwho b { font-weight: 700; font-size: 17px; color: var(--ink); }
-.vcard .vwho span { font-size: 15px; color: var(--muted); }
-.vctrl { display: flex; align-items: center; justify-content: center; gap: 18px; margin-top: 26px; }
-.vbtn { width: 46px; height: 46px; border: 0; background: var(--panel); color: var(--accent); box-shadow: var(--shadow); display: grid; place-items: center; cursor: pointer; transition: transform .2s; }
-.vbtn:hover { transform: translateY(-2px); }
-.vbtn svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
-.vdots { display: flex; gap: 8px; }
-.vdots button { width: 9px; height: 9px; border-radius: 50%; border: 0; padding: 0; background: var(--slate); cursor: pointer; transition: width .3s, background .3s; }
-.vdots button.on { background: var(--lime); width: 26px; border-radius: 5px; }
-.vmore { text-align: center; margin: 18px 0 0; }
-.vmore a { font-size: 15px; font-weight: 600; color: var(--on-page-2); }
-.vmore a:hover { color: var(--lime); }
-@media (max-width: 900px) { .vcard { flex-basis: 100%; padding: 26px 22px 22px; } .vcard blockquote { font-size: 16.5px; } }
 
-/* resume */
-.tabs { display: flex; margin: 30px auto 0; width: fit-content; max-width: 100%; background: var(--panel); box-shadow: var(--shadow); }
-.tabs button { font: inherit; font-size: 16px; font-weight: 700; padding: 11px 30px; border: 0; background: transparent; color: var(--text); cursor: pointer; }
-.tabs button + button { border-left: 1px solid var(--line); }
-.tabs button[aria-selected="true"] { background: var(--accent); color: var(--on-accent); }
-.pane { margin-top: 30px; }
-.timeline { position: relative; display: grid; gap: 18px; padding-left: 32px; border-left: 3px solid var(--slate); margin-left: 8px; }
-.job { position: relative; }
-.job::before { content: ""; position: absolute; left: -43px; top: 26px; width: 18px; height: 18px; border-radius: 50%; background: var(--page); border: 4px solid var(--slate); }
-.job[open]::before, .job[data-live]::before { border-color: var(--lime); }
-.job summary { list-style: none; cursor: pointer; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 20px; align-items: start; padding: 18px 24px; }
-.job summary::-webkit-details-marker { display: none; }
-.job h3 { font-size: 21px; font-weight: 700; }
-.job .sub { grid-column: 1; font-weight: 600; color: var(--accent); }
-.when { grid-column: 2; grid-row: 1; background: var(--accent); color: var(--on-accent); font-size: 14.5px; font-weight: 700; padding: 2px 10px; border-radius: 2px; white-space: nowrap; margin-top: 4px; }
-.job .note { grid-column: 1 / -1; font-size: 16px; }
-.job ul { list-style: none; margin: 0; padding: 14px 24px 22px; border-top: 1px solid var(--line); display: grid; gap: 10px; }
-.job li { position: relative; padding-left: 16px; font-size: 16px; }
-.job li::before { content: ""; position: absolute; left: 0; top: .62em; width: 6px; height: 6px; background: var(--accent); }
-.job li b { color: var(--ink); font-weight: 700; }
-.panel { padding: 26px; display: grid; gap: 14px; align-content: start; min-width: 0; }
-.panel h3 { font-size: 21px; font-weight: 700; }
-.list { list-style: none; margin: 0; padding: 0; display: grid; gap: 11px; }
-.list li { display: grid; }
-.list b { font-weight: 600; color: var(--ink); }
-.list span { font-size: 15px; color: var(--muted); }
-.list .n { font-size: 28px; font-weight: 700; line-height: 1.15; color: var(--accent); }
-.skillgrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 48px; list-style: none; margin: 0; padding: 28px 30px; background: var(--panel); box-shadow: var(--shadow); }
-.skillgrid li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 5px 12px; font-weight: 600; color: var(--ink); }
-.skillgrid li span { color: var(--muted); font-size: 15px; font-weight: 500; }
-.skillgrid i { grid-column: 1 / -1; height: 8px; background: var(--line); overflow: hidden; }
-.skillgrid i::after { content: ""; display: block; height: 100%; width: calc(var(--y) / 12 * 100%); background: var(--accent); }
-.also { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: 20px; color: var(--on-page-2); }
-.also b { font-weight: 600; color: var(--ink); background: var(--panel); padding: 3px 12px; }
 
-/* expertise */
-.lenses { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; margin-top: 38px; }
-.lens { padding: 26px; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 4px 16px; align-content: start; min-width: 0; transition: transform .25s; }
-.lens:hover, .domain:hover { transform: translateY(-4px); }
-.dot { grid-row: span 2; width: 54px; height: 54px; border-radius: 50%; display: grid; place-items: center; background: var(--accent); color: var(--on-accent); }
-.dot .ic { width: 26px; height: 26px; }
-.lens h3 { font-size: 22px; font-weight: 700; line-height: 1.25; }
-.lens p { margin: 0; font-size: 16.5px; }
-.lens ul { grid-column: 1 / -1; list-style: none; margin: 14px 0 0; padding: 14px 0 0; border-top: 1px solid var(--line); display: grid; gap: 8px; }
-.lens li { position: relative; padding-left: 16px; font-size: 16px; }
-.lens li::before { content: ""; position: absolute; left: 0; top: .62em; width: 6px; height: 6px; background: var(--accent); }
-.lens li b { color: var(--ink); font-weight: 700; }
-.sub-head { margin: 52px 0 0; text-align: center; font-size: clamp(24px, 3vw, 30px); font-weight: 700; color: var(--on-page); scroll-margin-top: 28px; }
-.sub-head::first-letter { color: var(--lime); }
-.sub-note { margin: 4px auto 0; text-align: center; color: var(--on-page-2); }
-.domains { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px; margin-top: 26px; }
-.domain { padding: 22px 22px 24px; display: grid; gap: 6px; align-content: start; justify-items: start; min-width: 0; transition: transform .25s; }
-.domain .when { grid-column: 1; grid-row: auto; margin: 0 0 6px; }
-.domain h4 { font-size: 19px; font-weight: 700; line-height: 1.25; }
-.domain .co { font-weight: 600; color: var(--accent); font-size: 16px; }
-.domain p { margin: 0; font-size: 16px; }
 
-/* interests */
-.int { justify-items: center; text-align: center; }
-.int .ic { width: 60px; height: 60px; padding: 14px; border-radius: 50%; background: var(--accent); color: var(--on-accent); stroke-width: 6; margin-bottom: 4px; }
-.int h3 { font-size: 21px; font-weight: 700; }
-
-/* contact */
-.contact { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); margin-top: 38px; box-shadow: var(--shadow); }
-.contact .card { box-shadow: none; }
-.who { padding: 0 0 24px; display: grid; gap: 6px; align-content: start; min-width: 0; }
-.who > :not(.pic) { margin-inline: 24px; }
-.who .pic { position: relative; aspect-ratio: 1.25; overflow: hidden; background: var(--photo); margin-bottom: 8px; }
-.who .pic::after { content: ""; position: absolute; left: -8%; right: -8%; bottom: -30px; height: 50px; border-radius: 50%; background: var(--panel); transform: rotate(-2deg); }
-.who img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 0; padding-top: 12px; }
-.who h3 { font-size: 25px; font-weight: 700; }
-.who p { margin: 0; font-size: 16px; }
-.who .tiles { margin-top: 8px; }
-.reach { padding: 36px 38px; display: grid; gap: 14px; align-content: center; min-width: 0; border-left: 1px solid var(--line); }
-.reach h3 { font-size: clamp(30px, 3.6vw, 40px); font-weight: 700; line-height: 1.12; }
-.reach p { margin: 0; max-width: 50ch; }
-.addr { font-size: clamp(19px, 2.2vw, 24px); font-weight: 700; color: var(--accent); user-select: all; overflow-wrap: anywhere; }
-.btn { font: inherit; font-size: 15px; font-weight: 700; display: inline-flex; align-items: center; gap: 8px; padding: 9px 18px; border: 1.5px solid var(--accent); background: transparent; color: var(--accent); cursor: pointer; text-decoration: none; transition: opacity .2s; }
-.btn:hover { opacity: .85; }
-.btn.solid { background: var(--accent); color: var(--on-accent); }
-.reach .row { display: flex; flex-wrap: wrap; gap: 10px; }
-
-/* footer */
-footer { padding-block: 44px 28px; }
-footer .inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px 24px; font-size: 15px; color: var(--on-page-2); }
-footer a { color: var(--on-page); text-decoration: none; font-weight: 600; }
-
-.toast { position: fixed; left: 50%; bottom: calc(24px + env(safe-area-inset-bottom, 0px)); transform: translate(-50%, 16px); background: var(--panel-2); color: var(--ink); box-shadow: var(--shadow); padding: 10px 18px; font-weight: 700; font-size: 15px; opacity: 0; pointer-events: none; transition: opacity .2s, transform .2s; z-index: 40; }
-.toast.show { opacity: 1; transform: translate(-50%, 0); }
-
-/* capture deterrents */
-img { -webkit-user-drag: none; -webkit-touch-callout: none; }
-.shielded .page { filter: blur(24px); }
-@media print { body { visibility: hidden; } }
-
-/* responsive */
-@media (max-width: 1200px) {
-  body::before { width: 36vw; height: 36vw; left: -12vw; top: -20vw; }
-}
-@media (max-width: 1000px) {
-  .grid3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .grid3.cred { grid-template-columns: minmax(0, 1fr); }
-  .domains { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-}
-@media (max-width: 900px) {
-  body { padding-bottom: 60px; }
-  body::before { width: 40vw; height: 40vw; top: -24vw; left: -18vw; }
-  .page { padding-inline: 16px; }
-  .rail { left: 0; right: 0; top: auto; bottom: 0; transform: none; }
-  .rail .menu { display: none; }
-  .rail .box.links { display: flex; justify-content: space-around; padding: 2px 4px calc(2px + env(safe-area-inset-bottom, 0px)); }
-  .rail a { width: auto; flex: 1; }
-  .rail a span { display: none; }
-  .lenses { grid-template-columns: minmax(0, 1fr); }
-  .tools { top: 12px; right: 12px; transform: none; box-shadow: none; }
-  .tools > :not(.theme) { display: none; }
-  .theme { border-radius: 50%; }
-  .hero { padding-top: 76px; }
-  .hero .inner { grid-template-columns: minmax(0, 1fr); gap: 0; }
-  .hero-copy { padding: 30px 24px 28px; order: 2; }
-  .photo { max-width: 400px; justify-self: center; order: 1; margin-top: -48px; }
-  .contact { grid-template-columns: minmax(0, 1fr); }
-  .reach { border-left: 0; border-top: 1px solid var(--line); }
-}
-@media (max-width: 620px) {
-  body { font-size: 16.5px; }
-  section.sec { padding-top: 56px; }
-  .grid3, .lenses { grid-template-columns: minmax(0, 1fr); margin-top: 28px; }
-  .domains { grid-template-columns: minmax(0, 1fr); }
-  .lens { padding: 22px 20px; }
-  .tabs { width: 100%; }
-  .tabs button { flex: 1; padding: 11px 6px; }
-  .timeline { padding-left: 20px; margin-left: 6px; }
-  .job::before { left: -31px; }
-  .job summary { grid-template-columns: minmax(0, 1fr); padding: 18px 20px; }
-  .when { grid-column: 1; grid-row: auto; justify-self: start; margin: 0 0 4px; }
-  .job ul { padding: 14px 20px 20px; }
-  .skillgrid { grid-template-columns: minmax(0, 1fr); padding: 22px 20px; }
-  .reach { padding: 28px 22px; }
-}
+.off{margin-top:18px;display:grid;grid-template-columns:auto repeat(3,minmax(0,1fr));gap:12px 24px;align-items:start;padding:18px 24px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}.off h3{font-size:18px}.off b{display:block;font-size:15px;color:var(--ink)}.off span{display:block;font-size:14px;line-height:1.4}
+.contact-panel .addr{display:block;font:800 clamp(18px,2.2vw,22px) 'Manrope',sans-serif;color:var(--lime);margin-top:12px;overflow-wrap:anywhere}.contact-actions{flex:none;max-width:320px}.contact-actions button{cursor:pointer;background:transparent}
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,16px);background:var(--card);color:var(--ink);box-shadow:var(--shadow);border-radius:8px;padding:10px 18px;font-weight:700;font-size:15px;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;z-index:40}.toast.show{opacity:1;transform:translate(-50%,0)}
+img{-webkit-user-drag:none}
+@media(min-width:1001px){.impact-card .card-kicker{min-height:2.7em}.impact-sub{min-height:2.6em}.impact-card h3{min-height:2.35em}}
+@media(max-width:1000px){.navlinks{gap:14px}.navlinks a{font-size:13px}.off{grid-template-columns:repeat(3,minmax(0,1fr))}.off h3{grid-column:1/-1}.impact-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:820px){.nav{height:62px}.menu-toggle{display:block}.navlinks{display:none;position:absolute;top:61px;left:0;right:0;background:var(--paper);border-bottom:1px solid var(--line);padding:14px 20px 20px;flex-direction:column;align-items:flex-start;gap:6px}.navlinks.open{display:flex}.navlinks a{font-size:15px}.contact-panel{display:block}.contact-actions{margin-top:22px;max-width:none}}
+@media(max-width:650px){section{padding:48px 0}.impact-grid,.off{grid-template-columns:minmax(0,1fr)}.side-stack{grid-template-columns:minmax(0,1fr)}}
+.social{display:grid;place-items:center;transition:color .2s,border-color .2s}.social svg{width:17px;height:17px;fill:currentColor}.social:hover{color:var(--blue);border-color:var(--blue)}
+@media(max-width:1060px){.nav{gap:10px}.navlinks{gap:12px}.nav-actions{gap:6px}}
+@media(max-width:400px){.nav-actions{gap:4px}.iconbtn{width:34px;height:34px}.social svg{width:15px;height:15px}}
+/* compact hero so the expertise cards are visible on arrival */
+.hero{padding:40px 0 36px}.hero h1{font-size:clamp(38px,5vw,58px)}.hero-lede{font-size:17px}.hero-actions{margin-top:20px}.portrait{width:min(220px,100%)}
+@media(max-width:650px){.hero{padding:20px 0 22px}.hero-grid{gap:12px}.portrait{width:84px}.hero h1{font-size:clamp(30px,9vw,36px);margin:8px 0 2px}.role{font-size:19px}.motto{font-size:14.5px;margin:6px 0 8px}.hero-lede{font-size:15.5px;line-height:1.5}.hero-sub{display:none}.hero-actions{gap:8px;margin-top:14px}.hero-actions .btn{padding:9px 12px}.hero-actions a[href*="linkedin"]{display:none}.xwrap{padding-top:20px}}
+/* expertise: the four disciplines, each with its proof point and project */
+.xwrap{padding-top:30px}.xlead{margin:0 0 14px;font:700 clamp(19px,2.2vw,23px)/1.25 'Manrope',sans-serif;letter-spacing:-.02em;color:var(--ink)}
+.xgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.xcard{font:inherit;text-align:left;cursor:pointer;width:100%;display:flex;flex-direction:column;min-width:0;padding:20px;background:var(--card);border:1px solid var(--line);border-top:4px solid var(--blue);border-radius:var(--radius);box-shadow:var(--shadow);color:var(--body);text-decoration:none;transition:transform .2s}
+.xcard:hover{transform:translateY(-3px)}
+.xcard h2{font-size:20px;letter-spacing:-.025em}.xcard p{flex:1;margin:6px 0 12px;font-size:14.5px;line-height:1.45}
+.xcard strong{font:800 32px/1.05 'Manrope',sans-serif;letter-spacing:-.05em;color:var(--blue);white-space:nowrap}.xcard span{margin-top:3px;font-size:13.5px;font-weight:600;line-height:1.3;color:var(--muted)}
+.xcard em{margin-top:12px;font-style:normal;font-size:14px;font-weight:700;color:var(--blue)}
+@media(max-width:900px){.xgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:420px){.xcard{padding:15px}.xcard h2{font-size:17.5px}.xcard strong{font-size:28px}.xgrid{gap:10px}}
+.contact-actions{flex-wrap:nowrap;gap:12px}
+.cicon{display:grid;place-items:center;width:54px;height:54px;padding:0;border:1px solid #8290b4;border-radius:50%;background:transparent;color:#fff;cursor:pointer;transition:transform .2s,background .2s,color .2s}
+.cicon:hover{transform:translateY(-2px);background:var(--lime);border-color:var(--lime);color:#172653}
+.cicon.primary{background:var(--lime);border-color:var(--lime);color:#172653}
+.cicon svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}.cicon svg.solid{fill:currentColor;stroke:none}
+/* drawer: the same dialog, anchored to the right edge for the disciplines */
+.modal.drawer{margin:0 0 0 auto;width:min(520px,calc(100vw - 28px));height:100dvh;max-height:100dvh;border-width:0 0 0 1px;border-radius:var(--radius) 0 0 var(--radius);padding:28px 28px 32px}
+.modal.drawer[open]{animation:dslide .28s cubic-bezier(.22,.8,.3,1)}
+@keyframes dslide{from{transform:translateX(100%)}}
+.modal.drawer .mhead{display:block;padding-right:40px}.modal.drawer .mproof{margin-top:14px}
+@media(max-width:650px){.modal.drawer{width:100vw;max-width:100vw;border:0;border-radius:0}}
+@media(max-width:380px){#email{font-size:17px;overflow-wrap:normal}}
+@media(prefers-reduced-motion:reduce){.modal[open],.modal[open]::backdrop,.modal.drawer[open]{animation:none}}
+/* modal: expertise detail and full recommendations */
+.modal{width:min(680px,calc(100vw - 32px));max-height:calc(100dvh - 48px);margin:auto;padding:30px;border:1px solid var(--line);border-radius:var(--radius);background:var(--card);color:var(--body);box-shadow:0 30px 70px rgba(6,12,32,.4)}
+.modal::backdrop{background:rgba(10,18,44,.6);backdrop-filter:blur(3px)}
+.modal[open]{animation:mrise .22s ease-out}.modal[open]::backdrop{animation:mfade .22s ease-out}
+@keyframes mrise{from{opacity:0;transform:translateY(14px)}}@keyframes mfade{from{opacity:0}}
+html:has(.modal[open]){overflow:hidden}
+.mclose{position:sticky;display:block;top:0;z-index:2;width:36px;height:36px;margin:-12px -12px -24px auto;border:1px solid var(--line);border-radius:50%;background:var(--card);color:var(--ink);cursor:pointer;font-size:14px}
+.mclose:hover{border-color:var(--blue);color:var(--blue)}
+.modal section.mview{padding:0}.mhead{display:flex;justify-content:space-between;gap:12px 24px;flex-wrap:wrap;padding-right:34px}
+.mhead h2{font-size:27px}.mhead p{margin:5px 0 0;font-size:15.5px}
+.mproof strong{display:block;font:800 30px/1.05 'Manrope',sans-serif;letter-spacing:-.05em;color:var(--blue)}.mproof span{font-size:13.5px;font-weight:600;color:var(--muted)}
+.mview h3{margin:22px 0 0;padding-top:18px;border-top:1px solid var(--line);font-size:12px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--blue);font-family:inherit}
+.mlist{list-style:none;display:grid;gap:14px;margin:14px 0 0;padding:0}
+.mlist li{display:grid;grid-template-columns:76px minmax(0,1fr);gap:14px;align-items:start}
+.mlogo{position:relative;display:block;height:46px;background:#fff;border:1px solid var(--line);border-radius:10px}.mlogo img{position:absolute;inset:6px;width:calc(100% - 12px);height:calc(100% - 12px);object-fit:contain}
+.mlist b{color:var(--ink);font-size:15px}.mlist p{margin:2px 0 0;font-size:14.5px;line-height:1.5}
+.mquote{margin:20px 0 0;padding-top:18px;border-top:1px solid var(--line);font-size:16px;line-height:1.7}.mquote p{margin:0 0 14px}.mquote p:last-child{margin:0}
+.qmore{padding:0;border:0;background:none;color:var(--lime);font:inherit;font-weight:700;text-decoration:underline;cursor:pointer}
+@media(max-width:560px){.modal{padding:22px 18px;width:calc(100vw - 20px);max-height:calc(100dvh - 24px)}.mhead h2{font-size:23px}.mlist li{grid-template-columns:60px minmax(0,1fr);gap:11px}.mlogo{height:38px}}
+@media print{.modal{display:none}}
+/* selected work: pick a project, read challenge, approach and outcome */
+.work{display:grid;grid-template-columns:280px minmax(0,1fr);gap:16px;align-items:stretch}
+.wtabs{display:grid;gap:8px;align-content:start}
+.wtab{display:grid;gap:2px;width:100%;min-width:0;padding:14px 16px;text-align:left;background:transparent;border:1px solid transparent;border-left:4px solid var(--line);border-radius:10px;color:var(--ink);cursor:pointer;transition:background .2s,border-color .2s}
+.wtab span{font-size:12px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.wtab b{font:700 16.5px/1.3 'Manrope',sans-serif}
+.wtab:hover{background:var(--card)}
+.wtab.on{background:var(--card);border-color:var(--line);border-left-color:var(--blue);box-shadow:var(--shadow)}.wtab.on span{color:var(--blue)}
+.wpanels{display:grid;min-width:0}
+.wpanel{grid-area:1/1;min-width:0;padding:28px 30px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);opacity:0;visibility:hidden;transition:opacity .22s,visibility .22s}
+.wpanel.on{opacity:1;visibility:visible}
+.wtop{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px 32px;align-items:start}
+.wtop h3{font-size:25px}.wtop p{margin:8px 0 0;font-size:15.5px}
+.wresult{text-align:right;max-width:200px}.wresult strong{display:block;font:800 40px/1.05 'Manrope',sans-serif;letter-spacing:-.05em;color:var(--blue);white-space:nowrap}.wresult span{display:block;margin-top:5px;font-size:13.5px;line-height:1.3;color:var(--muted);font-weight:600}
+.wflow{list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px;margin:22px 0 0;padding:20px 0 0;border-top:1px solid var(--line)}
+.wflow li{position:relative;min-width:0}.wflow li+li:before{content:"→";position:absolute;left:-23px;top:-2px;font-weight:700;color:var(--blue)}
+.wflow span{font-size:12px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--blue)}.wflow p{margin:6px 0 0;font-size:14.5px}
+@media(max-width:900px){.work{grid-template-columns:minmax(0,1fr)}.wtabs{grid-template-columns:repeat(2,minmax(0,1fr))}.wpanel{display:none}.wpanel.on{display:block}.wflow{grid-template-columns:minmax(0,1fr);gap:16px}.wflow li+li:before{content:none}}
+@media(max-width:560px){.wtop{grid-template-columns:minmax(0,1fr)}.wresult{text-align:left;max-width:none}.wpanel{padding:22px 20px}.wtab{padding:12px}.wtab b{font-size:15px}.wtop h3{font-size:22px}}
+/* recommendations: continuous carousel, paused on hover or by the button */
+.quote-rail.auto{overflow:hidden;margin-inline:-8px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 40px,#000 calc(100% - 40px),transparent);mask-image:linear-gradient(90deg,transparent,#000 40px,#000 calc(100% - 40px),transparent)}
+.quote-rail.auto .quote-grid{display:flex;gap:0;width:max-content;animation:drift var(--dur,65s) linear infinite}
+.quote-rail.auto .quote-card{flex:0 0 clamp(280px,38vw,440px);margin-right:16px;display:flex;flex-direction:column}.quote-rail.auto blockquote{flex:1}
+.quote-rail:hover .quote-grid,.quote-rail.paused .quote-grid{animation-play-state:paused}
+@keyframes drift{to{transform:translateX(-50%)}}
+.quote-foot{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-top:18px}.quote-foot p{margin:0;font-size:14px;color:#c3cce0}.quote-foot .btn{padding:7px 14px;background:transparent;cursor:pointer}
+.offsec{padding:28px 0 0}.offsec .off{margin-top:0}
+/* experience: horizontal timeline with logo stops */
+.xstops{position:relative;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}
+.xstops:before{content:"";position:absolute;left:10%;right:10%;top:36px;height:3px;background:var(--line)}
+.xstop{position:relative;min-width:0;width:100%;display:grid;grid-template-columns:minmax(0,1fr);justify-items:center;align-content:start;gap:3px;padding:0 2px;border:0;background:none;color:var(--body);text-align:center;cursor:pointer}
+.xlogo{position:relative;display:block;width:112px;max-width:100%;height:72px;background:#fff;border:2px solid var(--line);border-radius:14px;margin-bottom:7px;transition:transform .2s,border-color .2s,box-shadow .2s}
+.xlogo img{position:absolute;inset:9px;width:calc(100% - 18px);height:calc(100% - 18px);object-fit:contain}
+.xstop b{font-size:15px;line-height:1.25;color:var(--ink)}.xstop .date{white-space:normal}
+.xstop:hover .xlogo,.xstop.on .xlogo{transform:translateY(-3px);border-color:var(--blue);box-shadow:var(--shadow)}
+.xstop.on b{color:var(--blue)}
+.xpanels{position:relative;display:grid;margin-top:22px}
+.xpanels:before{content:"";position:absolute;z-index:1;top:-8px;left:calc((var(--i) + .5) * 20%);width:16px;height:16px;margin-left:-8px;transform:rotate(45deg);background:var(--card);border-left:1px solid var(--line);border-top:1px solid var(--line);transition:left .25s}
+.xpanel{grid-area:1/1;min-width:0;opacity:0;visibility:hidden;transform:translateY(-8px) scaleY(.97);transform-origin:top;transition:opacity .22s,transform .22s,visibility .22s}
+.xpanel.on{opacity:1;visibility:visible;transform:none}
+.xpanel h4{font:700 12px 'Manrope',sans-serif;letter-spacing:.09em;text-transform:uppercase;color:var(--blue);margin:14px 0 0}
+.xpanel ul{columns:2;column-gap:32px;display:block}.xpanel li{break-inside:avoid;margin-bottom:7px}
+.xline+.side-stack{grid-template-columns:repeat(3,minmax(0,1fr));margin-top:18px}
+@media(max-width:900px){.xline+.side-stack{grid-template-columns:repeat(2,minmax(0,1fr))}.xpanel ul{columns:1}.xpanel{display:none}.xpanel.on{display:block}}
+@media(max-width:650px){.xline+.side-stack{grid-template-columns:minmax(0,1fr)}.xstops{gap:4px}.xstops:before{top:24px}.xlogo{width:100%;height:48px;border-radius:10px;margin-bottom:5px}.xlogo img{inset:4px;width:calc(100% - 8px);height:calc(100% - 8px)}.xstop b{font-size:12px}.xstop .date{font-size:11px;line-height:1.25}}
+@media print{.quote-rail.auto{overflow:visible;-webkit-mask-image:none;mask-image:none}.quote-rail.auto .quote-grid{display:block;width:auto;animation:none}.quote-card[aria-hidden]{display:none}.quote-rail.auto .quote-card{margin:0 0 10px}.wpanel{opacity:1;visibility:visible;display:block;grid-area:auto;margin-bottom:10px}.wtabs{display:none}.xpanel{opacity:1;visibility:visible;transform:none;grid-area:auto;margin-bottom:10px}.xpanels:before{display:none}.topbar,.toast,.iconbtn{display:none}.hero,.recommendations,.contact-panel{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
 </style>
 </head>
 <body>
-<svg class="sprite" aria-hidden="true">
-  <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></symbol>
-  <symbol id="i-github" viewBox="0 0 24 24"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.8.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3z"/></symbol>
-  <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></symbol>
-  <symbol id="i-medium" viewBox="0 0 24 24"><path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></symbol>
-  <symbol id="i-mail"viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
-  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="12" height="12" rx="1"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></symbol>
-  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M4.2 4.2 6 6M18 18l1.8 1.8M2 12h2.5M19.5 12H22M4.2 19.8 6 18M18 6l1.8-1.8"/></symbol>
-  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.5 14.5A8.5 8.5 0 1 1 9.5 3.5a7 7 0 0 0 11 11z"/></symbol>
-  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></symbol>
-  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></symbol>
-  <symbol id="i-box" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="12" rx="2"/><path d="M8 8V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></symbol>
-  <symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6h12M9 12h12M9 18h12M4 6h.01M4 12h.01M4 18h.01"/></symbol>
-  <symbol id="i-badge" viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="m8.5 14-1.5 8 5-3 5 3-1.5-8"/></symbol>
-  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 9c0 6-8 11-8 11z"/></symbol>
-  <symbol id="i-send" viewBox="0 0 24 24"><path d="M21 3 3 10.5l7 3 3 7zM10 13.5 21 3"/></symbol>
-  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></symbol>
-  <symbol id="i-data" viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></symbol>
-  <symbol id="i-ai" viewBox="0 0 24 24"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9zM19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z"/></symbol>
-  <symbol id="i-platform" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5zM3 13l9 5 9-5"/></symbol>
-  <symbol id="i-mobile" viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></symbol>
-</svg>
 <a class="skip" href="#main">Skip to content</a>
-
-<nav class="rail" id="rail" aria-label="Main">
-    <div class="box menu"><button id="menu" type="button" aria-label="Show section names" aria-expanded="false"><svg class="ic" viewBox="0 0 24 24"><path d="M4 7h16M8 12h12M4 17h16"/></svg></button></div>
-    <div class="box links">
-      <a href="#top" aria-label="About"><svg class="ic"><use href="#i-user"/></svg><span>About</span></a>
-      <a href="#expertise" aria-label="Expertise"><svg class="ic"><use href="#i-platform"/></svg><span>Expertise</span></a>
-      <a href="#results" aria-label="Results"><svg class="ic"><use href="#i-chart"/></svg><span>Results</span></a>
-      <a href="#products" aria-label="Products"><svg class="ic"><use href="#i-box"/></svg><span>Products</span></a>
-      <a href="#career" aria-label="Career"><svg class="ic"><use href="#i-list"/></svg><span>Career</span></a>
-      <a href="#credentials" aria-label="Credentials"><svg class="ic"><use href="#i-badge"/></svg><span>Credentials</span></a>
-      <a href="#interests" aria-label="Interests"><svg class="ic"><use href="#i-heart"/></svg><span>Interests</span></a>
-      <a href="#contact" aria-label="Contact"><svg class="ic"><use href="#i-send"/></svg><span>Contact</span></a>
-    </div>
-  </nav>
-<aside class="tools" aria-label="Quick actions">
-  <button class="theme" id="theme" type="button" aria-label="Switch to dark mode"><svg class="ic moon"><use href="#i-moon"/></svg><svg class="ic sun"><use href="#i-sun"/></svg></button>
-  <button class="copy" type="button" aria-label="Copy email"><svg class="ic"><use href="#i-mail"/></svg></button>
-  <a href="https://www.linkedin.com/in/pawan-sastry-01442537/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="ic solid"><use href="#i-linkedin"/></svg></a>
-  <a href="https://github.com/PawanSastry" target="_blank" rel="noopener" aria-label="GitHub"><svg class="ic solid"><use href="#i-github"/></svg></a>
-  <a href="https://medium.com/@pawansastry47" target="_blank" rel="noopener" aria-label="Medium"><svg class="ic solid"><use href="#i-medium"/></svg></a>
-</aside>
-
-<div class="page">
-<header class="hero" id="top">
-  <div class="inner">
-    <div class="hero-copy">
-      <span class="kicker">B2B enterprise SaaS</span>
-      <h1>Hi, I'm <em>Pawan Sastry</em></h1>
-      <p class="role"><span class="sr">Senior Product Manager</span><span aria-hidden="true"><i>a</i><span id="typed">Senior Product Manager.</span><span class="caret"></span></span></p>
-      <p class="lede">15 years building platform, data and AI products. I lead the Platform, Data &amp; Analytics and AI products of the Knock CRM at RealPage, a portfolio of about $75M in annual recurring revenue. I own it end to end, from 0-to-1 builds to scaling 1-to-N.</p>
-      <div class="hero-links">
-        <div>
-          <h2>Find me</h2>
-          <div class="tiles">
-            <a class="tile" href="https://www.linkedin.com/in/pawan-sastry-01442537/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="ic solid"><use href="#i-linkedin"/></svg></a>
-            <a class="tile" href="https://github.com/PawanSastry" target="_blank" rel="noopener" aria-label="GitHub"><svg class="ic solid"><use href="#i-github"/></svg></a>
-            <a class="tile" href="https://medium.com/@pawansastry47" target="_blank" rel="noopener" aria-label="Medium"><svg class="ic solid"><use href="#i-medium"/></svg></a>
-            <a class="tile" href="#contact" aria-label="Email"><svg class="ic"><use href="#i-mail"/></svg></a>
-          </div>
-        </div>
-        <div>
-          <h2>What I lead</h2>
-          <div class="tiles">
-            <span class="tile label"><svg class="ic"><use href="#i-platform"/></svg>Platform</span>
-            <span class="tile label"><svg class="ic"><use href="#i-data"/></svg>Data</span>
-            <span class="tile label"><svg class="ic"><use href="#i-ai"/></svg>AI</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="photo"><img src="portrait.webp" width="646" height="800" alt="Portrait of Pawan Sastry"><svg viewBox="0 0 340 46" preserveAspectRatio="none" aria-hidden="true"><path d="M0 46V34Q70 46 170 38T340 4V46Z"/></svg></div>
-  </div>
-</header>
-
+<header class="topbar"><div class="wrap nav"><a class="brand" href="#top">PAWAN<span>.</span></a><nav class="navlinks" id="navlinks" aria-label="Main navigation"><a href="#expertise">Expertise</a><a href="#impact">Impact</a><a href="#work">Selected work</a><a href="#experience">Experience</a><a href="#recommendations">Recommendations</a><a href="#contact">Contact</a></nav><div class="nav-actions"><a class="iconbtn social" href="https://www.linkedin.com/in/pawan-sastry-01442537/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a><a class="iconbtn social" href="https://github.com/PawanSastry" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.8.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3z"/></svg></a><a class="iconbtn social" href="https://medium.com/@pawansastry47" target="_blank" rel="noopener" aria-label="Medium" title="Medium"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg></a><button class="iconbtn" id="themeToggle" aria-label="Switch colour theme" title="Switch colour theme">◐</button><button class="iconbtn menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button></div></div></header>
 <main id="main">
-  <section class="sec" id="expertise">
-    <div class="inner">
-      <div class="head"><span>Expertise</span><h2>How I Work as a PM</h2><p>Four kinds of product work, with the evidence for each.</p></div>
-      <div class="lenses">
-        <article class="card lens">
-          <span class="dot"><svg class="ic"><use href="#i-code"/></svg></span>
-          <h3>Tech PM</h3>
-          <p>I work close to the architecture, so engineering trade-offs are part of the product decision.</p>
-          <ul>
-            <li><b>S&amp;P Global.</b> CDN routing, load balancing and monitoring with SRE, for 99.1% availability on the logging service behind every S&amp;P product.</li>
-            <li><b>RealPage.</b> Snowflake and dbt re-architecture with 70% lower query latency and 46% lower cloud cost.</li>
-            <li><b>RealPage.</b> Knock Mobile rebuilt in React Native and launched on Android.</li>
-          </ul>
-        </article>
-        <article class="card lens">
-          <span class="dot"><svg class="ic"><use href="#i-platform"/></svg></span>
-          <h3>Platform PM</h3>
-          <p>I build the shared foundations that other products and teams run on.</p>
-          <ul>
-            <li><b>RealPage.</b> Authentication and identity fixes cut monthly user-management tickets by 82%.</li>
-            <li><b>RealPage.</b> A cross-channel consent platform that makes texting fully TCPA-compliant.</li>
-            <li><b>CBRE.</b> Merged two ServiceNow instances and shipped 180+ reusable workflows.</li>
-          </ul>
-        </article>
-        <article class="card lens">
-          <span class="dot"><svg class="ic"><use href="#i-chart"/></svg></span>
-          <h3>Analytics PM</h3>
-          <p>I turn data into governed metrics that customers and internal teams can trust and use themselves.</p>
-          <ul>
-            <li><b>Metric layer.</b> One governed layer for leads, engagement and ad spend, across analytics, BI and customer self-service.</li>
-            <li><b>Attribution.</b> Multi-Touch Attribution and Ad Spend ROI, with +3.5% account retention and +8% revenue retention.</li>
-            <li><b>Data as a service.</b> Knock Data Cloud self-service reporting, $93K ARR across 785 sites.</li>
-          </ul>
-        </article>
-        <article class="card lens">
-          <span class="dot"><svg class="ic"><use href="#i-ai"/></svg></span>
-          <h3>AI-enabled PM</h3>
-          <p>I ship AI into real workflows, with guardrails and human oversight built in.</p>
-          <ul>
-            <li><b>RealPage.</b> Nurturing AI agent contributing ~$15M ARR, with campaign creation up 40%.</li>
-            <li><b>CBRE.</b> GenAI case summaries and virtual agent conversations for support.</li>
-            <li><b>FactSet.</b> ML extraction framework with 95% accuracy that cut data-collection time by 40%.</li>
-          </ul>
-        </article>
-      </div>
-
-      <h3 class="sub-head" id="domains">Domains I've Worked In</h3>
-      <p class="sub-note">15 years across property, enterprise and financial technology.</p>
-      <div class="domains">
-        <article class="card domain"><span class="when">2024 – Now</span><h4>PropTech &amp; Property Management</h4><span class="co">RealPage</span><p>CRM for 10,000+ property management companies: lifecycle nurturing, tours, compliance and reporting.</p></article>
-        <article class="card domain"><span class="when">2023 – 2024</span><h4>Enterprise IT &amp; Service Management</h4><span class="co">CBRE</span><p>ServiceNow as an internal platform: software provisioning, service catalogue and support.</p></article>
-        <article class="card domain"><span class="when">2022 – 2023</span><h4>Enterprise Order Operations</h4><span class="co">Dell Technologies</span><p>Global order workflows and the work-order model behind fulfilment.</p></article>
-        <article class="card domain"><span class="when">2011 – 2022</span><h4>FinTech &amp; Financial Data</h4><span class="co">FactSet, S&amp;P Global</span><p>Financial data collection, data quality, client account configuration and portfolio management.</p></article>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec" id="results">
-    <div class="inner">
-      <div class="head"><span>Outcomes</span><h2>Recent Results</h2><p>Outcomes from products I led, across RealPage, CBRE and FactSet.</p></div>
-      <div class="grid3">
-        <article class="card result">
-          <span class="tag">RealPage · AI</span>
-          <span class="big">$15M<small>ARR contributed</small></span>
-          <h3>Nurturing AI agent contributes ~$15M to the ~$64M Knock AI SKU</h3>
-          <p>Campaign creation up 40% since launch, and ~$3.4M of a $5M at-risk book retained.</p>
-        </article>
-        <article class="card result">
-          <span class="tag">RealPage · Platform</span>
-          <span class="big">−82%<small>user-management tickets</small></span>
-          <h3>Fixing hybrid-auth failures cuts monthly tickets from 17 to 3</h3>
-          <p>These issues were behind 35% of all support tickets. The drop has held for more than six months.</p>
-        </article>
-        <article class="card result">
-          <span class="tag">RealPage · Data</span>
-          <span class="big">−70%<small>query latency</small></span>
-          <h3>Snowflake and dbt re-architecture also cuts cloud cost 46%</h3>
-          <p>The governed model now powers Knock Data Cloud and the analytics portfolio.</p>
-        </article>
-        <article class="card result">
-          <span class="tag">RealPage · Compliance</span>
-          <span class="big">13→18%<small>SMS opt-in rate</small></span>
-          <h3>Consent platform rebuild makes texting fully TCPA-compliant</h3>
-          <p>Double opt-in agreed with Legal, a simpler call flow and new opt-in points. Engagement doubled.</p>
-        </article>
-        <article class="card result">
-          <span class="tag">CBRE · Enterprise</span>
-          <span class="big">$1M+<small>saved every year</small></span>
-          <h3>Provisioning automation and platform consolidation at CBRE</h3>
-          <p>~$600K from automated software provisioning and ~$440K from merging two ServiceNow instances.</p>
-        </article>
-        <article class="card result">
-          <span class="tag">FactSet · ML</span>
-          <span class="big">95%<small>extraction accuracy</small></span>
-          <h3>ML extraction framework cuts data-collection time 40%</h3>
-          <p>Built with ML engineering to automate financial data collection at scale.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec" id="products">
-    <div class="inner">
-      <div class="head"><span>Portfolio</span><h2>Featured Products</h2><p>Products I own on the Knock platform at RealPage.</p></div>
-      <div class="grid3">
-        <article class="card prod">
-          <div class="art"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="40"/><circle cx="50" cy="50" r="28"/><circle cx="50" cy="50" r="16"/></svg></div>
-          <div class="row"><span class="tag">Agentic AI</span><span>2025–now</span></div>
-          <h3>Nurturing AI</h3>
-          <p>Campaign, Message and Decision AI with human oversight. Lifecycle journeys for renewals, move-ins and win-backs across email and SMS.</p>
-          <span class="stat">~$15M ARR · +40% campaign creation</span>
-        </article>
-        <article class="card prod">
-          <div class="art"><svg viewBox="0 0 100 100" aria-hidden="true"><ellipse cx="50" cy="22" rx="34" ry="12"/><path d="M16 22v56c0 6.6 15 12 34 12s34-5.4 34-12V22M16 50c0 6.6 15 12 34 12s34-5.4 34-12"/></svg></div>
-          <div class="row"><span class="tag">Data</span><span>DaaS</span></div>
-          <h3>Knock Data Cloud</h3>
-          <p>Self-service reporting on governed data, built on a re-architected Snowflake and dbt model.</p>
-          <span class="stat">$93K ARR · 785 sites</span>
-        </article>
-        <article class="card prod">
-          <div class="art"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="14" cy="20" r="6"/><circle cx="14" cy="50" r="6"/><circle cx="14" cy="80" r="6"/><circle cx="84" cy="50" r="10"/><path d="M20 20c30 0 34 30 54 30M20 50h54M20 80c30 0 34-30 54-30"/></svg></div>
-          <div class="row"><span class="tag">Analytics</span><span>Multi-Touch Attribution</span></div>
-          <h3>Attribution &amp; Ad Spend ROI</h3>
-          <p>One governed metric layer for leads, engagement and ad spend, used across analytics, BI and customer self-service.</p>
-          <span class="stat">+3.5% account retention · +8% revenue retention</span>
-        </article>
-        <article class="card prod">
-          <div class="art"><svg viewBox="0 0 100 100" aria-hidden="true"><rect x="28" y="8" width="44" height="84" rx="8"/><path d="M44 82h12"/></svg></div>
-          <div class="row"><span class="tag">Mobile</span><span>2025–26</span></div>
-          <h3>Knock Mobile</h3>
-          <p>Rebuilt the iOS app in React Native and launched Android. Agents run tours, create prospects and verify ID on site.</p>
-          <span class="stat">~$720K ARR · ~450 sites · ~110K units</span>
-        </article>
-        <article class="card prod">
-          <div class="art"><svg viewBox="0 0 100 100" aria-hidden="true"><rect x="22" y="44" width="56" height="44" rx="6"/><path d="M34 44V32a16 16 0 0 1 32 0v12"/><circle cx="50" cy="66" r="6"/></svg></div>
-          <div class="row"><span class="tag">Platform</span><span>2025–26</span></div>
-          <h3>Authentication &amp; Identity</h3>
-          <p>Fixed race conditions and sync gaps between unified and native sign-in, and standardised user-assignment flows.</p>
-          <span class="stat">−82% user-management tickets</span>
-        </article>
-        <article class="card prod">
-          <div class="art"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M50 8 16 22v26c0 22 15 36 34 44 19-8 34-22 34-44V22z"/><path d="m36 50 10 10 20-20"/></svg></div>
-          <div class="row"><span class="tag">Compliance</span><span>2025</span></div>
-          <h3>SMS Opt-In &amp; TCPA</h3>
-          <p>A cross-channel consent platform with compliant templates PMCs can brand, plus audit trails at every step.</p>
-          <span class="stat">Opt-in 13% → 18% · engagement doubled</span>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec voices" id="voices">
-    <div class="inner">
-      <div class="head"><span>Recommendations</span><h2>What Colleagues Say</h2><p>From LinkedIn recommendations by the people I&rsquo;ve worked for.</p></div>
-      <div class="vwrap">
-        <div class="vtrack" id="vtrack" role="region" aria-label="Recommendations, use arrow keys to move" tabindex="0">
-        <article class="card vcard">
-          <span class="qm" aria-hidden="true">&ldquo;</span>
-          <blockquote>Pawan doesn&rsquo;t wait to be handed a roadmap &mdash; he builds one, grounded in real strategic thinking and backed by technical insight sharp enough to hold his own with any engineer in the room. &hellip; I&rsquo;ve told Pawan more than once that my job would be so much easier if I could just clone him. He&rsquo;s the real deal, and any team would be lucky to have him.</blockquote>
-          <div class="by"><span class="av" aria-hidden="true">JJ</span><span class="vwho"><b>Jennifer Jones</b><span>Director of Product Management &middot; Managed Pawan at RealPage</span></span></div>
-        </article>
-        <article class="card vcard">
-          <span class="qm" aria-hidden="true">&ldquo;</span>
-          <blockquote>He&rsquo;s one of the strongest technical contributors I&rsquo;ve worked with. What sets him apart is that he never just executes what&rsquo;s been asked, but he consistently identified improvement opportunities to nurturing and user management workflows before anyone else pointed them out, and then followed through with thoroughness to actually build them.</blockquote>
-          <div class="by"><span class="av" aria-hidden="true">JA</span><span class="vwho"><b>Jon Ames</b><span>Product, RealPage &middot; Managed Pawan directly</span></span></div>
-        </article>
-        <article class="card vcard">
-          <span class="qm" aria-hidden="true">&ldquo;</span>
-          <blockquote>Pawan managed several critical areas within the Knock CRM portfolio, including platform and data analytics. He demonstrated strong execution capabilities, effectively leading large engineering teams to deliver meaningful business outcomes&hellip; One of Pawan&rsquo;s key strengths is his proactive approach to understanding customer and stakeholder needs.</blockquote>
-          <div class="by"><span class="av" aria-hidden="true">NM</span><span class="vwho"><b>Neeraj Mishra</b><span>Director of Product Management &middot; Reporting manager at RealPage</span></span></div>
-        </article>
-        <article class="card vcard">
-          <span class="qm" aria-hidden="true">&ldquo;</span>
-          <blockquote>Pawan took ownership of the product vision for the Front Office Data Engineering initiatives, aligning complex data-driven solutions with enterprise-wide goals and long-term customer success metrics. What stood out most was Pawan&rsquo;s ability to navigate across departments, build consensus, and move projects forward without needing constant oversight.</blockquote>
-          <div class="by"><span class="av" aria-hidden="true">RR</span><span class="vwho"><b>Reed Rawhouser</b><span>Product leader &middot; Managed Pawan at RealPage</span></span></div>
-        </article>
-        </div>
-        <div class="vctrl">
-          <button class="vbtn" id="vprev" type="button" aria-label="Previous recommendation"><svg viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg></button>
-          <div class="vdots" id="vdots"></div>
-          <button class="vbtn" id="vnext" type="button" aria-label="Next recommendation"><svg viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg></button>
-        </div>
-        <p class="vmore"><a href="https://www.linkedin.com/in/pawan-sastry-01442537/" target="_blank" rel="noopener">Read all recommendations on LinkedIn &rarr;</a></p>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec" id="career">
-    <div class="inner">
-      <div class="head"><span>15 years, five companies</span><h2>My Resume</h2><p>From Associate Product Manager to Senior Product Manager. Open a role for details.</p></div>
-      <span id="credentials"></span>
-      <div class="tabs" role="tablist" aria-label="Resume">
-        <button type="button" role="tab" id="t-exp" aria-controls="p-exp" aria-selected="true">Experience</button>
-        <button type="button" role="tab" id="t-cred" aria-controls="p-cred" aria-selected="false" tabindex="-1">Credentials</button>
-        <button type="button" role="tab" id="t-skill" aria-controls="p-skill" aria-selected="false" tabindex="-1">Skills</button>
-      </div>
-
-      <div class="pane" id="p-exp" role="tabpanel" aria-labelledby="t-exp">
-        <div class="timeline">
-          <details class="card job" data-live open>
-            <summary><h3>RealPage</h3><span class="when">2024 – Now</span><span class="sub">Senior Product Manager · Hyderabad</span><span class="note">Platform, Data &amp; Analytics, Nurturing AI and Mobile for Knock CRM. Three direct reports.</span></summary>
-            <ul>
-              <li><b>Portfolio strategy.</b> Own the roadmap across four product areas (~$75M ARR, 10,000+ property management companies). I run annual planning, QBRs and customer roadmap sessions.</li>
-              <li><b>Agentic AI.</b> Nurturing AI agent with guardrails and feedback loops. Campaign creation up 40%, ~$15M ARR contributed.</li>
-              <li><b>Unified analytics.</b> Governed metric layer, Multi-Touch Attribution and Ad Spend ROI. +3.5% account retention and +8% revenue retention.</li>
-              <li><b>Data platform.</b> Launched Knock Data Cloud ($93K ARR, 785 sites) on a Snowflake and dbt model with 70% lower latency and 46% lower cost.</li>
-              <li><b>Compliance.</b> Cross-channel TCPA consent platform. Opt-in rose from 13% to 18%, and engagement doubled.</li>
-              <li><b>Reliability and mobile.</b> Monthly tickets cut 82% (17 to 3). Knock Mobile rebuilt in React Native and launched on Android (~$720K ARR).</li>
-            </ul>
-          </details>
-          <details class="card job">
-            <summary><h3>CBRE</h3><span class="when">2023 – 2024</span><span class="sub">Senior Product Manager · Enterprise</span><span class="note">ServiceNow platform: provisioning, consolidation and GenAI support features.</span></summary>
-            <ul>
-              <li><b>Provisioning automation.</b> End-to-end automated software provisioning across the organisation, saving ~$600K a year.</li>
-              <li><b>Platform consolidation.</b> Merged two overlapping ServiceNow instances, cutting duplicate licence spend by ~$440K a year.</li>
-              <li><b>Service catalogue.</b> Shipped 180+ reusable workflows in place of inconsistent per-team processes.</li>
-              <li><b>GTM and adoption.</b> Rolled out upgrades to thousands of users and moved 6 teams to Agile. Added GenAI case summaries and virtual agent conversations.</li>
-            </ul>
-          </details>
-          <details class="card job">
-            <summary><h3>Dell Technologies</h3><span class="when">2022 – 2023</span><span class="sub">Senior Product Manager · Enterprise</span><span class="note">Global order experience and work-order model.</span></summary>
-            <ul>
-              <li><b>Order experience.</b> Standardised global order workflows into one operating model, cutting order fulfilment cycle time by 20%.</li>
-              <li><b>Work-order model.</b> Migrated legacy order flows onto a single new work-order model.</li>
-            </ul>
-          </details>
-          <details class="card job">
-            <summary><h3>S&amp;P Global</h3><span class="when">2019 – 2022</span><span class="sub">Product Manager · FinTech</span><span class="note">Lean portfolio management, account configuration and logging infrastructure.</span></summary>
-            <ul>
-              <li><b>Portfolio product launch.</b> A SAFe-aligned portfolio product that reached 60% adoption across PMO teams.</li>
-              <li><b>Service availability.</b> CDN routing, load balancing and monitoring with SRE for the logging service behind every S&amp;P product. 99.1% availability, with outages down from 1–2 a month to 1–2 a quarter.</li>
-              <li><b>Account configuration.</b> Redesigned the tool for configuring client accounts and subscription access as a web application.</li>
-            </ul>
-          </details>
-          <details class="card job">
-            <summary><h3>FactSet Research Systems</h3><span class="when">2011 – 2019</span><span class="sub">Associate Product Manager · FinTech</span><span class="note">Data collection platforms, ML automation and data quality.</span></summary>
-            <ul>
-              <li><b>Platform modernisation.</b> Retired the legacy Voyager collection platform and moved the business unit onto the next-generation system without breaking data continuity.</li>
-              <li><b>ML-driven automation.</b> An ML extraction framework with 95% accuracy that cut data-collection time by 40%.</li>
-              <li><b>Data quality.</b> A deduplication framework that stopped ~60% of duplicate documents and cut data-export incidents by ~60%.</li>
-              <li><b>Growth.</b> Turned client needs into collection priorities, contributing to 10% client-base growth.</li>
-            </ul>
-          </details>
-        </div>
-      </div>
-
-      <div class="pane" id="p-cred" role="tabpanel" aria-labelledby="t-cred" hidden>
-        <div class="grid3 cred" style="margin-top:0">
-          <div class="card panel">
-            <h3>Certifications</h3>
-            <ul class="list">
-              <li><b>Professional Scrum Product Owner II</b><span>Scrum.org</span></li>
-              <li><b>SAFe Product Owner / Product Manager</b><span>Scaled Agile</span></li>
-              <li><b>SAFe for Teams</b><span>Scaled Agile</span></li>
-              <li><b>Certified Scrum Master</b><span>Scrum Alliance</span></li>
-              <li><b>Pragmatic Certification II</b><span>Pragmatic Institute</span></li>
-              <li><b>AWS Certified Cloud Practitioner</b><span>Amazon Web Services</span></li>
-              <li><b>Cloud Digital Leader</b><span>Google Cloud</span></li>
-            </ul>
-          </div>
-          <div class="card panel">
-            <h3>Awards</h3>
-            <ul class="list">
-              <li><span class="n">2015</span><b>Incredible Employee of the Year</b><span>FactSet. One of 15 chosen from about 9,500 employees.</span></li>
-              <li><span class="n">9+</span><b>Incredible Employee of the Quarter</b><span>FactSet</span></li>
-              <li><span class="n">★</span><b>Realstar of the Quarter, multiple times</b><span>RealPage</span></li>
-            </ul>
-          </div>
-          <div class="card panel">
-            <h3>Education</h3>
-            <ul class="list">
-              <li><b>Master of Computer Applications</b><span>Osmania University, Hyderabad · 2008–2011</span></li>
-              <li><b>Bachelor of Science</b><span>Osmania University, Hyderabad · 2005–2008</span></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="pane" id="p-skill" role="tabpanel" aria-labelledby="t-skill" hidden>
-        <ul class="skillgrid" aria-label="Skills with years of experience">
-          <li style="--y:12">Agile <span>12 yrs</span><i></i></li>
-          <li style="--y:11">Product Management <span>11 yrs</span><i></i></li>
-          <li style="--y:11">Scrum <span>11 yrs</span><i></i></li>
-          <li style="--y:8">Product Strategy <span>8 yrs</span><i></i></li>
-          <li style="--y:8">GTM Strategy <span>8 yrs</span><i></i></li>
-          <li style="--y:8">MS SQL <span>8 yrs</span><i></i></li>
-          <li style="--y:7">Data &amp; Analytics <span>7 yrs</span><i></i></li>
-          <li style="--y:7">Azure DevOps <span>7 yrs</span><i></i></li>
-          <li style="--y:5">SAFe <span>5 yrs</span><i></i></li>
-          <li style="--y:5">SaaS Platform Architecture <span>5 yrs</span><i></i></li>
-          <li style="--y:4">0-to-1 Products <span>4 yrs</span><i></i></li>
-          <li style="--y:3">Generative AI <span>3 yrs</span><i></i></li>
-          <li style="--y:3">CRM Platforms <span>3 yrs</span><i></i></li>
-          <li style="--y:3">PostgreSQL <span>3 yrs</span><i></i></li>
-          <li style="--y:2">dbt <span>2 yrs</span><i></i></li>
-          <li style="--y:2">ServiceNow ITSM <span>2 yrs</span><i></i></li>
-        </ul>
-        <p class="also">Also: <b>Agentic AI</b> <b>AWS</b></p>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec" id="interests">
-    <div class="inner">
-      <div class="head"><span>Interests</span><h2>Off Stage</h2><p>What I do when I'm not shipping product.</p></div>
-      <div class="grid3">
-        <article class="card int">
-          <svg class="ic" viewBox="0 0 100 100" aria-hidden="true"><path d="M10 22h44v32H32l-12 10V54H10z"/><path d="M54 36h36v32h-8v10l-12-10H46V54"/><path d="M20 34h24M20 43h16M60 48h22M60 57h14"/></svg>
-          <h3>Learning languages</h3><p>Picking up new languages, one conversation at a time.</p>
-        </article>
-        <article class="card int">
-          <svg class="ic" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="38"/><path d="M12 50h76M50 12c12 12 16 24 16 38s-4 26-16 38c-12-12-16-24-16-38s4-26 16-38z"/></svg>
-          <h3>Travelling</h3><p>New places, and an app idea that wakes you before your stop.</p>
-        </article>
-        <article class="card int">
-          <svg class="ic" viewBox="0 0 100 100" aria-hidden="true"><rect x="8" y="30" width="84" height="44" rx="18"/><path d="M28 44v16M20 52h16"/><circle cx="66" cy="48" r="3"/><circle cx="76" cy="56" r="3"/></svg>
-          <h3>Gaming</h3><p>Playing, and planning my own gaming PC build.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec" id="contact">
-    <div class="inner">
-      <div class="head"><span>Contact</span><h2>Let's talk</h2></div>
-      <div class="contact">
-        <div class="card who">
-          <div class="pic"><img src="portrait.webp" alt=""></div>
-          <h3>Pawan Sastry</h3>
-          <p>Senior Product Manager in Hyderabad, building data, analytics and AI products for B2B enterprise SaaS.</p>
-          <div class="tiles">
-            <a class="tile" href="https://www.linkedin.com/in/pawan-sastry-01442537/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="ic solid"><use href="#i-linkedin"/></svg></a>
-            <a class="tile" href="https://github.com/PawanSastry" target="_blank" rel="noopener" aria-label="GitHub"><svg class="ic solid"><use href="#i-github"/></svg></a>
-            <a class="tile" href="https://medium.com/@pawansastry47" target="_blank" rel="noopener" aria-label="Medium"><svg class="ic solid"><use href="#i-medium"/></svg></a>
-          </div>
-        </div>
-        <div class="card reach">
-          <h3>Have something worth building?</h3>
-          <p>Product leadership roles, data and AI products, or an idea worth building. Email is the fastest way to reach me.</p>
-          <span class="addr" id="email">pawansastry47@gmail.com</span>
-          <div class="row">
-            <button class="btn solid copy" type="button"><svg class="ic" style="width:18px;height:18px"><use href="#i-copy"/></svg>Copy email</button>
-            <a class="btn" href="https://www.linkedin.com/in/pawan-sastry-01442537/" target="_blank" rel="noopener">LinkedIn</a>
-            <a class="btn" href="https://github.com/PawanSastry" target="_blank" rel="noopener">GitHub</a>
-            <a class="btn" href="https://medium.com/@pawansastry47" target="_blank" rel="noopener">Medium</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer>
-  <div class="inner"><span>© 2026 Pawan Sastry. All rights reserved.</span><a href="#top">Back to top</a></div>
-</footer>
-</div>
-
+<section class="hero" id="top"><div class="wrap hero-grid"><div><div class="eyebrow">Product leadership · Enterprise SaaS</div><h1>Hi, I'm <span>Pawan Sastry</span></h1><p class="role"><span class="skip-sr" style="position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)">Senior Product Manager</span><span aria-hidden="true"><i>a</i><span id="typed">Senior Product Manager.</span><span class="caret"></span></span></p><p class="motto">Building products. Scaling platforms. Driving impact.</p><p class="hero-lede">15 years building platform, data and AI products. I lead the Platform, Data &amp; Analytics and AI products of the Knock CRM at RealPage, a portfolio of about $75M in annual recurring revenue. I own it end to end, from 0&#8209;to&#8209;1 builds to scaling 1&#8209;to&#8209;N.</p><p class="hero-sub">15 years in product · Hyderabad, India</p><div class="hero-actions"><a class="btn btn-primary" href="#work">Explore selected work ↗</a><a class="btn btn-ghost" href="Pawan_Sastry_Resume.pdf" download>Download resume ↓</a></div></div><div class="portrait"><span class="initials" aria-hidden="true">PS</span><img src="portrait.webp" alt="Portrait of Pawan Sastry" style="position:relative"></div></div></section>
+<div class="wrap xwrap" id="expertise"><p class="xlead">A product leader across four disciplines</p><div class="xgrid"><button class="xcard" type="button" data-view="0" aria-haspopup="dialog"><h2>AI-enabled PM</h2><p>Ships AI into real workflows, with guardrails.</p><strong>~$15M</strong><span>ARR contributed</span><em>View my work →</em></button><button class="xcard" type="button" data-view="1" aria-haspopup="dialog"><h2>Analytics PM</h2><p>Turns data into governed, trusted metrics.</p><strong>+8%</strong><span>revenue retention</span><em>View my work →</em></button><button class="xcard" type="button" data-view="2" aria-haspopup="dialog"><h2>Platform PM</h2><p>Builds foundations other teams run on.</p><strong>−82%</strong><span>user-management tickets</span><em>View my work →</em></button><button class="xcard" type="button" data-view="3" aria-haspopup="dialog"><h2>Tech PM</h2><p>Works close to the architecture.</p><strong>−70%</strong><span>query latency</span><em>View my work →</em></button></div></div>
+<section id="impact"><div class="wrap"><div class="section-head"><div class="eyebrow">Business outcomes</div><h2>Impact beyond the roadmap.</h2><p>A selection of outcomes across revenue growth, customer retention, platform reliability, compliance and operational efficiency.</p></div><div class="impact-grid">
+<article class="impact-card featured"><div class="card-kicker">AI · Revenue contribution</div><div class="impact-number">~$15M</div><div class="impact-sub">ARR contributed to the ~$64M Knock AI SKU</div><h3>Nurturing AI</h3><p>Campaign, Message and Decision AI with human oversight, for renewals, move-ins and win-backs across email and SMS. Campaign creation up 40%, and ~$3.4M of a $5M at-risk book retained.</p><span class="impact-type">Revenue growth &amp; retention</span></article>
+<article class="impact-card featured"><div class="card-kicker">Platform · Reliability</div><div class="impact-number">−82%</div><div class="impact-sub">monthly user-management tickets</div><h3>Authentication &amp; Identity</h3><p>Fixed race conditions and sync gaps between unified and native sign-in, taking tickets from 17 to 3. These issues were behind 35% of all support tickets, and the drop has held for more than six months.</p><span class="impact-type">Operational resilience</span></article>
+<article class="impact-card featured"><div class="card-kicker">Data · Monetisation</div><div class="impact-number">−70%</div><div class="impact-sub">query latency</div><h3>Knock Data Cloud</h3><p>Self-service reporting on a re-architected Snowflake and dbt model that also cut cloud cost 46%. $93K ARR across 785 sites.</p><span class="impact-type">Product performance &amp; revenue</span></article>
+<article class="impact-card"><div class="card-kicker">Compliance · Customer experience</div><div class="impact-number">13 → 18%</div><div class="impact-sub">SMS opt-in rate</div><h3>SMS Opt-In &amp; TCPA</h3><p>A cross-channel consent platform with compliant templates PMCs can brand and audit trails at every step. Double opt-in agreed with Legal, a simpler call flow and new opt-in points. Engagement doubled.</p><span class="impact-type">Compliance &amp; adoption</span></article>
+<article class="impact-card"><div class="card-kicker">Analytics · Retention</div><div class="impact-number">+8%</div><div class="impact-sub">revenue retention</div><h3>Unified Renter &amp; Marketing Analytics</h3><p>One governed metric layer for leads, engagement and ad spend, across analytics, BI and customer self-service. Account retention also up 3.5%.</p><span class="impact-type">Revenue retention</span></article>
+<article class="impact-card"><div class="card-kicker">Mobile · Growth</div><div class="impact-number">~$720K</div><div class="impact-sub">ARR</div><h3>Knock Mobile</h3><p>Rebuilt the iOS app in React Native and launched Android. Agents run tours, create prospects and verify ID on site. ~450 sites, ~110K units.</p><span class="impact-type">New product revenue</span></article>
+<article class="impact-card"><div class="card-kicker">CBRE · Enterprise</div><div class="impact-number">$1M+</div><div class="impact-sub">saved every year</div><h3>Provisioning automation and platform consolidation</h3><p>~$600K from automated software provisioning and ~$440K from merging two ServiceNow instances.</p><span class="impact-type">Cost efficiency</span></article>
+<article class="impact-card"><div class="card-kicker">FactSet · ML</div><div class="impact-number">95%</div><div class="impact-sub">extraction accuracy</div><h3>ML extraction framework cuts data-collection time 40%</h3><p>Built with ML engineering to automate financial data collection at scale.</p><span class="impact-type">Automation</span></article>
+</div></div></section>
+<section class="case-section" id="work"><div class="wrap"><div class="section-head"><div class="eyebrow">Selected product work</div><h2>How I turn complex problems into products.</h2><p>Four representative initiatives, from the problem to the product approach and the outcome.</p></div><div class="work"><div class="wtabs" role="tablist" aria-label="Selected product work" aria-orientation="vertical"><button class="wtab on" type="button" role="tab" id="wt0" aria-controls="wp0" aria-selected="true"><span>AI product</span><b>AI-powered Nurturing Platform</b></button><button class="wtab" type="button" role="tab" id="wt1" aria-controls="wp1" aria-selected="false" tabindex="-1"><span>Data platform</span><b>Knock Data Cloud</b></button><button class="wtab" type="button" role="tab" id="wt2" aria-controls="wp2" aria-selected="false" tabindex="-1"><span>Platform product</span><b>Unified Identity & Authentication</b></button><button class="wtab" type="button" role="tab" id="wt3" aria-controls="wp3" aria-selected="false" tabindex="-1"><span>Analytics product</span><b>Unified Renter &amp; Marketing Analytics</b></button></div><div class="wpanels"><article class="wpanel on" role="tabpanel" id="wp0" aria-labelledby="wt0"><div class="wtop"><div><h3>AI-powered Nurturing Platform</h3><p>Built a CRM nurturing capability using Campaign, Message and Decision AI, with human oversight, to support renewals, move-ins and win-back journeys across email and SMS.</p></div><div class="wresult"><strong>~$15M</strong><span>ARR contribution to the Knock AI SKU</span></div></div><ol class="wflow"><li><span>Challenge</span><p>Improve customer engagement and retention through more effective, scalable nurturing journeys.</p></li><li><span>Approach</span><p>Bring campaign creation, messaging and decision support together, while retaining human oversight in the workflow.</p></li><li><span>Outcome</span><p>Campaign creation increased 40%; approximately $3.4M of a $5M at-risk book was retained.</p></li></ol></article><article class="wpanel" role="tabpanel" id="wp1" aria-labelledby="wt1"><div class="wtop"><div><h3>Knock Data Cloud</h3><p>Launched a self-service reporting product on a re-architected Snowflake and dbt foundation, serving customers across 785 sites.</p></div><div class="wresult"><strong>−70%</strong><span>Query latency · 46% lower cloud cost</span></div></div><ol class="wflow"><li><span>Challenge</span><p>Improve reporting responsiveness and create a scalable self-service data experience.</p></li><li><span>Approach</span><p>Re-architect the data models and reporting foundation using Snowflake and dbt. The governed model now powers Knock Data Cloud and the analytics portfolio.</p></li><li><span>Outcome</span><p>70% lower query latency, 46% lower cloud cost and $93K ARR across 785 sites.</p></li></ol></article><article class="wpanel" role="tabpanel" id="wp2" aria-labelledby="wt2"><div class="wtop"><div><h3>Unified Identity & Authentication</h3><p>Addressed recurring user-management issues caused by race conditions and synchronisation gaps between unified and native sign-in experiences.</p></div><div class="wresult"><strong>17 → 3</strong><span>Monthly user-management tickets</span></div></div><ol class="wflow"><li><span>Challenge</span><p>Improve reliability of user access and reduce operational support burden.</p></li><li><span>Approach</span><p>Focused on the underlying synchronisation and race-condition problems affecting identity flows, and standardised user-assignment flows.</p></li><li><span>Outcome</span><p>Monthly tickets reduced by 82%, with the improvement sustained for more than six months.</p></li></ol></article><article class="wpanel" role="tabpanel" id="wp3" aria-labelledby="wt3"><div class="wtop"><div><h3>Unified Renter &amp; Marketing Analytics</h3><p>Created a governed metric layer for leads, engagement and advertising spend, supporting analytics, BI and customer self-service.</p></div><div class="wresult"><strong>+8%</strong><span>Revenue retention improvement</span></div></div><ol class="wflow"><li><span>Challenge</span><p>Provide a consistent view of marketing performance and connect spend to measurable outcomes.</p></li><li><span>Approach</span><p>Establish shared governed metrics across reporting and self-service experiences.</p></li><li><span>Outcome</span><p>8% revenue retention improvement and 3.5% account retention improvement.</p></li></ol></article></div></div></div></section>
+<section id="experience"><div class="wrap"><div class="section-head"><div class="eyebrow">Career journey</div><h2>Experience built across products and industries.</h2><p>From financial data platforms to enterprise workflows and PropTech SaaS.</p></div><div class="xline"><div class="xstops"><button class="xstop" type="button" aria-expanded="false" aria-controls="xp0"><span class="xlogo"><img src="logos/factset.png" alt=""></span><b>FactSet</b><span class="date">2011 – 2019</span></button><button class="xstop" type="button" aria-expanded="false" aria-controls="xp1"><span class="xlogo"><img src="logos/spglobal.png" alt=""></span><b>S&amp;P Global</b><span class="date">2019 – 2022</span></button><button class="xstop" type="button" aria-expanded="false" aria-controls="xp2"><span class="xlogo"><img src="logos/dell.png" alt=""></span><b>Dell</b><span class="date">2022 – 2023</span></button><button class="xstop" type="button" aria-expanded="false" aria-controls="xp3"><span class="xlogo"><img src="logos/cbre.png" alt=""></span><b>CBRE</b><span class="date">2023 – 2024</span></button><button class="xstop on" type="button" aria-expanded="true" aria-controls="xp4"><span class="xlogo"><img src="logos/realpage.svg" alt=""></span><b>RealPage</b><span class="date">2024 – Present</span></button></div><div class="xpanels" id="xpanels" style="--i:4"><article class="experience-card xpanel" id="xp0"><div class="exp-head"><div><h3>FactSet Research Systems</h3><div class="exp-role">Associate Product Manager · FinTech</div></div><span class="date">2011 – 2019</span></div><p>Data collection platforms, ML automation and data quality.</p><h4>Key contributions</h4><ul><li><b>Platform modernisation.</b> Retired the legacy Voyager collection platform and moved the business unit onto the next-generation system without breaking data continuity.</li><li><b>ML-driven automation.</b> An ML extraction framework with 95% accuracy that cut data-collection time by 40%.</li><li><b>Data quality.</b> A deduplication framework that stopped ~60% of duplicate documents and cut data-export incidents by ~60%.</li><li><b>Growth.</b> Turned client needs into collection priorities, contributing to 10% client-base growth.</li></ul></article><article class="experience-card xpanel" id="xp1"><div class="exp-head"><div><h3>S&amp;P Global</h3><div class="exp-role">Product Manager · FinTech</div></div><span class="date">2019 – 2022</span></div><p>Lean portfolio management, account configuration and logging infrastructure.</p><h4>Key contributions</h4><ul><li><b>Portfolio product launch.</b> A SAFe-aligned portfolio product that reached 60% adoption across PMO teams.</li><li><b>Service availability.</b> CDN routing, load balancing and monitoring with SRE for the logging service behind every S&amp;P product. 99.1% availability, with outages down from 1–2 a month to 1–2 a quarter.</li><li><b>Account configuration.</b> Redesigned the tool for configuring client accounts and subscription access as a web application.</li></ul></article><article class="experience-card xpanel" id="xp2"><div class="exp-head"><div><h3>Dell Technologies</h3><div class="exp-role">Senior Product Manager · Enterprise</div></div><span class="date">2022 – 2023</span></div><p>Global order experience and work-order model.</p><h4>Key contributions</h4><ul><li><b>Order experience.</b> Standardised global order workflows into one operating model, cutting order fulfilment cycle time by 20%.</li><li><b>Work-order model.</b> Migrated legacy order flows onto a single new work-order model.</li></ul></article><article class="experience-card xpanel" id="xp3"><div class="exp-head"><div><h3>CBRE</h3><div class="exp-role">Senior Product Manager · Enterprise</div></div><span class="date">2023 – 2024</span></div><p>ServiceNow platform: provisioning, consolidation and GenAI support features.</p><h4>Key contributions</h4><ul><li><b>Provisioning automation.</b> End-to-end automated software provisioning across the organisation, saving ~$600K a year.</li><li><b>Platform consolidation.</b> Merged two overlapping ServiceNow instances, cutting duplicate licence spend by ~$440K a year.</li><li><b>Service catalogue.</b> Shipped 180+ reusable workflows in place of inconsistent per-team processes.</li><li><b>GTM and adoption.</b> Rolled out upgrades to thousands of users and moved 6 teams to Agile. Added GenAI case summaries and virtual agent conversations.</li></ul></article><article class="experience-card xpanel on" id="xp4"><div class="exp-head"><div><h3>RealPage</h3><div class="exp-role">Senior Product Manager · Hyderabad</div></div><span class="date">2024 – Present</span></div><p>Platform, Data &amp; Analytics, Nurturing AI and Mobile for Knock CRM. Three direct reports.</p><h4>Key contributions</h4><ul><li><b>Portfolio strategy.</b> Own the roadmap across four product areas (~$75M ARR, 10,000+ property management companies). I run annual planning, QBRs and customer roadmap sessions.</li><li><b>Agentic AI.</b> Nurturing AI agent with guardrails and feedback loops. Campaign creation up 40%, ~$15M ARR contributed.</li><li><b>Unified analytics.</b> Governed metric layer, Multi-Touch Attribution and Ad Spend ROI. +3.5% account retention and +8% revenue retention.</li><li><b>Data platform.</b> Launched Knock Data Cloud ($93K ARR, 785 sites) on a Snowflake and dbt model with 70% lower latency and 46% lower cost.</li><li><b>Compliance.</b> Cross-channel TCPA consent platform. Opt-in rose from 13% to 18%, and engagement doubled.</li><li><b>Reliability and mobile.</b> Monthly tickets cut 82% (17 to 3). Knock Mobile rebuilt in React Native and launched on Android (~$720K ARR).</li></ul></article></div></div><aside class="side-stack"><div class="side-panel"><h3>Education &amp; credentials</h3><div class="credential"><b>Master of Computer Applications</b>Osmania University · 2008–2011</div><div class="credential"><b>Bachelor of Science</b>Osmania University · 2005–2008</div><div class="credential"><b>Professional Scrum Product Owner II</b>Scrum.org</div><div class="credential"><b>SAFe Product Owner / Product Manager</b>Scaled Agile</div><div class="credential"><b>SAFe for Teams</b>Scaled Agile</div><div class="credential"><b>Certified Scrum Master</b>Scrum Alliance</div><div class="credential"><b>Pragmatic Certification II</b>Pragmatic Institute</div><div class="credential"><b>AWS Certified Cloud Practitioner</b>Amazon Web Services</div><div class="credential"><b>Cloud Digital Leader</b>Google Cloud</div></div><div class="side-panel"><h3>Selected recognition</h3><div class="credential"><b>Incredible Employee of the Year · 2015</b>One of 15 selected from approximately 9,500 employees at FactSet.</div><div class="credential"><b>Incredible Employee of the Quarter</b>9+ recognitions at FactSet.</div><div class="credential"><b>Realstar of the Quarter</b>Multiple recognitions at RealPage.</div></div><div class="side-panel"><h3>Product &amp; technology toolkit</h3><div class="skill-groups"><div class="skill-group"><h4>PRODUCT LEADERSHIP</h4><div class="chips"><span class="chip">Agile · 12 yrs</span><span class="chip">Product Management · 11 yrs</span><span class="chip">Scrum · 11 yrs</span><span class="chip">Product Strategy · 8 yrs</span><span class="chip">GTM Strategy · 8 yrs</span><span class="chip">SAFe · 5 yrs</span><span class="chip">0-to-1 Products · 4 yrs</span></div></div><div class="skill-group"><h4>DATA &amp; AI</h4><div class="chips"><span class="chip">MS SQL · 8 yrs</span><span class="chip">Data &amp; Analytics · 7 yrs</span><span class="chip">Generative AI · 3 yrs</span><span class="chip">PostgreSQL · 3 yrs</span><span class="chip">dbt · 2 yrs</span><span class="chip">Agentic AI</span><span class="chip">Snowflake</span></div></div><div class="skill-group"><h4>PLATFORMS &amp; TOOLS</h4><div class="chips"><span class="chip">Azure DevOps · 7 yrs</span><span class="chip">SaaS Platform Architecture · 5 yrs</span><span class="chip">CRM Platforms · 3 yrs</span><span class="chip">ServiceNow ITSM · 2 yrs</span><span class="chip">AWS</span><span class="chip">GCP</span><span class="chip">Jira</span><span class="chip">Figma</span></div></div></div></div></aside></div></section>
+<section class="recommendations" id="recommendations"><div class="wrap"><div class="section-head"><div class="eyebrow">Social proof</div><h2>What colleagues say.</h2><p>Perspectives from product leaders and colleagues I've worked with.</p></div><div class="quote-rail" id="quoteRail"><div class="quote-grid" id="quoteTrack"><article class="quote-card"><blockquote>&ldquo;Pawan doesn&rsquo;t wait to be handed a roadmap — he builds one, grounded in real strategic thinking and backed by technical insight sharp enough to hold his own with any engineer in the room.&rdquo; <button class="qmore" type="button" data-view="q0" aria-haspopup="dialog">Read more</button></blockquote><div class="quote-by"><b>Jennifer Jones</b><span>Director of Product Management · Managed Pawan at RealPage</span></div></article><article class="quote-card"><blockquote>&ldquo;What sets him apart is that he never just executes what&rsquo;s been asked, but he consistently identified improvement opportunities to nurturing and user management workflows before anyone else pointed them out, and then followed through with thoroughness to actually build them.&rdquo; <button class="qmore" type="button" data-view="q1" aria-haspopup="dialog">Read more</button></blockquote><div class="quote-by"><b>Jon Ames</b><span>Product, RealPage · Managed Pawan directly</span></div></article><article class="quote-card"><blockquote>&ldquo;Pawan managed several critical areas within the Knock CRM portfolio, including platform and data analytics. He demonstrated strong execution capabilities, effectively leading large engineering teams to deliver meaningful business outcomes for the RealPage Front Office platform.&rdquo; <button class="qmore" type="button" data-view="q2" aria-haspopup="dialog">Read more</button></blockquote><div class="quote-by"><b>Neeraj Mishra</b><span>Director of Product Management · Reporting manager at RealPage</span></div></article><article class="quote-card"><blockquote>&ldquo;What stood out most was Pawan&rsquo;s ability to navigate across departments, build consensus, and move projects forward without needing constant oversight.&rdquo; <button class="qmore" type="button" data-view="q3" aria-haspopup="dialog">Read more</button></blockquote><div class="quote-by"><b>Reed Rawhouser</b><span>Product leader · Managed Pawan at RealPage</span></div></article><article class="quote-card"><blockquote>&ldquo;Pawan is akin to a SQL mastermind when it came to creative yet efficient solutions that fit in the confines of our prebuilt infrastructure.&rdquo; <button class="qmore" type="button" data-view="q4" aria-haspopup="dialog">Read more</button></blockquote><div class="quote-by"><b>Crish</b><span>Colleague</span></div></article></div></div><div class="quote-foot"><p>Read more recommendations on <a href="https://www.linkedin.com/in/pawan-sastry-01442537/" target="_blank" rel="noopener">LinkedIn ↗</a>.</p><button class="btn btn-ghost" id="quotePause" type="button" hidden>Pause</button></div></div></section>
+<section class="offsec" id="interests"><div class="wrap"><div class="off"><h3>Off stage</h3><div><b>Learning languages</b><span>Picking up new languages, one conversation at a time.</span></div><div><b>Travelling</b><span>New places, and an app idea that wakes you before your stop.</span></div><div><b>Gaming</b><span>Playing, and planning my own gaming PC build.</span></div></div></div></section>
+<section id="contact"><div class="wrap"><div class="contact-panel"><div><div class="eyebrow">Let's connect</div><h2>Have something worth building?</h2><p>Open to conversations around product leadership, enterprise SaaS, data platforms and AI-powered products. Email is the fastest way to reach me.</p><span class="addr" id="email">pawansastry47@gmail.com</span></div><div class="contact-actions"><a class="cicon primary" href="mailto:pawansastry47@gmail.com" aria-label="Email me" title="Email me"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a><button class="cicon" id="copyEmail" type="button" aria-label="Copy email" title="Copy email"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="1"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button><a class="cicon" href="https://www.linkedin.com/in/pawan-sastry-01442537/" target="_blank" rel="noopener" aria-label="Connect on LinkedIn" title="Connect on LinkedIn"><svg class="solid" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a></div></div></div></section>
+</main><footer><div class="wrap footer-row"><span>© 2026 Pawan Sastry. All rights reserved.</span><div class="footer-links"><a href="#top">Back to top ↑</a></div></div></footer>
+<dialog class="modal" id="modal"><button class="mclose" id="modalClose" type="button" aria-label="Close">✕</button><!-- One section per expertise card (data-view 0-3) and one per recommendation (q0-q4). Edit the content here. --><section class="mview" data-view="0" hidden><div class="mhead"><div><h2 id="mt0">AI-enabled PM</h2><p>Ships AI into real workflows, with guardrails.</p></div><div class="mproof"><strong>~$15M</strong><span>ARR contributed</span></div></div><h3>Work across my experience</h3><ul class="mlist"><li><span class="mlogo"><img src="logos/realpage.svg" alt=""></span><div><b>RealPage</b><p>Nurturing AI agent contributing ~$15M ARR, with campaign creation up 40%.</p></div></li><li><span class="mlogo"><img src="logos/cbre.png" alt=""></span><div><b>CBRE</b><p>GenAI case summaries and virtual agent conversations for support.</p></div></li><li><span class="mlogo"><img src="logos/factset.png" alt=""></span><div><b>FactSet</b><p>ML extraction framework with 95% accuracy that cut data-collection time by 40%.</p></div></li></ul></section><section class="mview" data-view="1" hidden><div class="mhead"><div><h2 id="mt1">Analytics PM</h2><p>Turns data into governed, trusted metrics.</p></div><div class="mproof"><strong>+8%</strong><span>revenue retention</span></div></div><h3>Work across my experience</h3><ul class="mlist"><li><span class="mlogo"><img src="logos/realpage.svg" alt=""></span><div><b>RealPage · Metric layer</b><p>One governed layer for leads, engagement and ad spend, across analytics, BI and customer self-service.</p></div></li><li><span class="mlogo"><img src="logos/realpage.svg" alt=""></span><div><b>RealPage · Attribution</b><p>Multi-Touch Attribution and Ad Spend ROI, with +3.5% account retention and +8% revenue retention.</p></div></li><li><span class="mlogo"><img src="logos/realpage.svg" alt=""></span><div><b>RealPage · Data as a service</b><p>Knock Data Cloud self-service reporting, $93K ARR across 785 sites.</p></div></li></ul></section><section class="mview" data-view="2" hidden><div class="mhead"><div><h2 id="mt2">Platform PM</h2><p>Builds foundations other teams run on.</p></div><div class="mproof"><strong>−82%</strong><span>user-management tickets</span></div></div><h3>Work across my experience</h3><ul class="mlist"><li><span class="mlogo"><img src="logos/realpage.svg" alt=""></span><div><b>RealPage</b><p>Authentication and identity fixes cut monthly user-management tickets by 82%.</p></div></li><li><span class="mlogo"><img src="logos/realpage.svg" alt=""></span><div><b>RealPage</b><p>A cross-channel consent platform that makes texting fully TCPA-compliant.</p></div></li><li><span class="mlogo"><img src="logos/cbre.png" alt=""></span><div><b>CBRE</b><p>Merged two ServiceNow instances and shipped 180+ reusable workflows.</p></div></li></ul></section><section class="mview" data-view="3" hidden><div class="mhead"><div><h2 id="mt3">Tech PM</h2><p>Works close to the architecture.</p></div><div class="mproof"><strong>−70%</strong><span>query latency</span></div></div><h3>Work across my experience</h3><ul class="mlist"><li><span class="mlogo"><img src="logos/spglobal.png" alt=""></span><div><b>S&amp;P Global</b><p>CDN routing, load balancing and monitoring with SRE, for 99.1% availability on the logging service behind every S&amp;P product.</p></div></li><li><span class="mlogo"><img src="logos/realpage.svg" alt=""></span><div><b>RealPage</b><p>Snowflake and dbt re-architecture with 70% lower query latency and 46% lower cloud cost.</p></div></li><li><span class="mlogo"><img src="logos/realpage.svg" alt=""></span><div><b>RealPage</b><p>Knock Mobile rebuilt in React Native and launched on Android.</p></div></li></ul></section><section class="mview" data-view="q0" hidden><div class="mhead"><div><h2 id="mq0">Jennifer Jones</h2><p>Director of Product Management · Managed Pawan at RealPage</p></div></div><blockquote class="mquote"><p>For the past 18 months I&rsquo;ve had the pleasure of managing Pawan as Senior Product Manager at RealPage/Knock, and he&rsquo;s one of those rare PMs who makes everyone around him better.</p><p>Pawan doesn&rsquo;t wait to be handed a roadmap — he builds one, grounded in real strategic thinking and backed by technical insight sharp enough to hold his own with any engineer in the room. What sets Pawan apart is the combination: he can dig into a hard, ambiguous problem on his own and come out the other side with a genuinely creative, well-reasoned solution, but he&rsquo;s equally effective in bringing other teams along with him when the work crosses boundaries. That&rsquo;s a rarer skill than people give it credit for.</p><p>Beyond the skill set, Pawan is simply a great person to have on a team. He&rsquo;s positive, easy to collaborate with, and the kind of colleague who makes cross-team work feel less like negotiation and more like problem-solving together. I&rsquo;ve told Pawan more than once that my job would be so much easier if I could just clone him. He&rsquo;s the real deal, and any team would be lucky to have him.</p></blockquote></section><section class="mview" data-view="q1" hidden><div class="mhead"><div><h2 id="mq1">Jon Ames</h2><p>Product, RealPage · Managed Pawan directly</p></div></div><blockquote class="mquote"><p>I&rsquo;ve been lucky enough to manage Pawan while he owned our Knock platform work across nurturing, admin and user management and he&rsquo;s one of the strongest technical contributors I&rsquo;ve worked with. What sets him apart is that he never just executes what&rsquo;s been asked, but he consistently identified improvement opportunities to nurturing and user management workflows before anyone else pointed them out, and then followed through with thoroughness to actually build them. He&rsquo;s demonstrated great product vision and ownership that you&rsquo;d expect from a true Senior Product Manager. He quickly embraced AI tools as our processes have evolved and created impressive prototypes and even led engineering through the implementation guidelines which speaks to his above-average technical ability.</p><p>What I&rsquo;ve valued most though was how Pawan approached every decision with both the business and client in mind. He has an instinct for finding solutions that worked for both sides. He&rsquo;s someone who&rsquo;s clearly hungry to keep growing, and it showed in how quickly he took on more ownership over time.</p><p>Pawan will be a huge loss for my team, but an even bigger win for whatever team he joins. I&rsquo;d recommend him without hesitation.</p></blockquote></section><section class="mview" data-view="q2" hidden><div class="mhead"><div><h2 id="mq2">Neeraj Mishra</h2><p>Director of Product Management · Reporting manager at RealPage</p></div></div><blockquote class="mquote"><p>I had the opportunity to work closely with Pawan as his reporting manager, and I found him to be a dependable, driven, and highly effective professional.</p><p>Pawan managed several critical areas within the Knock CRM portfolio, including platform and data analytics. He demonstrated strong execution capabilities, effectively leading large engineering teams to deliver meaningful business outcomes for the RealPage Front Office platform. He also played a valuable role in supporting agentic AI initiatives via the platform work.</p><p>One of Pawan&rsquo;s key strengths is his proactive approach to understanding customer and stakeholder needs. He consistently engaged with customers and internal stakeholders, translated conversations into actionable insights, and drove them towards tangible deliverables. His ability to structure his thoughts and document requirements and decisions clearly was particularly valuable.</p><p>He is also a good communicator who believes in keeping stakeholders informed through timely, clear, and transparent communication. This helped build trust and confidence among both customers and internal teams.</p><p>Beyond his professional capabilities, Pawan brings a genuinely positive attitude, a growth mindset, and a collaborative approach to everything he does. He is someone who takes ownership, gets things done, and makes the team around him better.</p></blockquote></section><section class="mview" data-view="q3" hidden><div class="mhead"><div><h2 id="mq3">Reed Rawhouser</h2><p>Product leader · Managed Pawan at RealPage</p></div></div><blockquote class="mquote"><p>I had the pleasure of managing Pawan as a Product Manager at RealPage. He consistently impressed me with his initiative, strategic thinking, and ability to deliver results both independently and in collaboration with teams across the organization.</p><p>Pawan took ownership of the product vision for the Front Office Data Engineering initiatives, aligning complex data-driven solutions with enterprise-wide goals and long-term customer success metrics. What stood out most was Pawan&rsquo;s ability to navigate across departments, build consensus, and move projects forward without needing constant oversight. His mix of technical insight, product vision, and cross-functional collaboration made him an invaluable contributor to our team&rsquo;s success. Any organization would be fortunate to have him driving product strategy and execution.</p></blockquote></section><section class="mview" data-view="q4" hidden><div class="mhead"><div><h2 id="mq4">Crish</h2><p>Colleague</p></div></div><blockquote class="mquote"><p>Pawan is a quintessential colleague and team member. His capacity to absorb new information and lead the team towards innovative solutions were only a few of the reasons he was a crucial member of our teams success. Pawan is akin to a SQL mastermind when it came to creative yet efficient solutions that fit in the confines of our prebuilt infrastructure.</p><p>He took initiative in driving projects forward and became a subject matter expert with little guidance. Beyond that, he&rsquo;s always been a positive voice even during tense discussions during cross team communication. I cannot overstate how vital he was to the success of our team and am sure he will bring the same enthusiasm in all his future pursuits.</p></blockquote></section></dialog>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-
 <script>
 (function () {
   var root = document.documentElement, reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   // theme toggle, remembered between visits
-  var themeBtn = document.getElementById('theme'), themeMeta = document.querySelector('meta[name="theme-color"]');
-  function paintTheme() {
-    var dark = root.dataset.theme === 'dark';
-    themeBtn.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
-    themeMeta.content = dark ? '#17204A' : '#1B2A63';
-  }
+  var themeBtn = document.getElementById('themeToggle'), themeMeta = document.querySelector('meta[name="theme-color"]');
+  function paintTheme() { themeMeta.content = root.dataset.theme === 'dark' ? '#10182e' : '#172653'; }
   themeBtn.addEventListener('click', function () {
     root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
     try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
@@ -770,25 +193,14 @@ img { -webkit-user-drag: none; -webkit-touch-callout: none; }
   });
   paintTheme();
 
-  // deterrents only: browsers cannot fully block saving or capturing a public page
-  var shieldTimer;
-  function shield() { root.classList.add('shielded'); clearTimeout(shieldTimer); shieldTimer = setTimeout(function () { root.classList.remove('shielded'); }, 3000); }
-  addEventListener('contextmenu', function (e) { e.preventDefault(); });
-  addEventListener('dragstart', function (e) { if (e.target.tagName === 'IMG') e.preventDefault(); });
-  addEventListener('click', function (e) { if (e.ctrlKey || e.metaKey) { e.preventDefault(); e.stopPropagation(); } }, true);
-  addEventListener('keydown', function (e) {
-    if (e.key === 'PrintScreen' || (e.metaKey && e.shiftKey)) shield();
-    if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'p') e.preventDefault();
+  // phone menu
+  var menu = document.getElementById('menuToggle'), nav = document.getElementById('navlinks');
+  function closeMenu() { nav.classList.remove('open'); menu.setAttribute('aria-expanded', 'false'); menu.setAttribute('aria-label', 'Open navigation'); }
+  menu.addEventListener('click', function () {
+    var open = nav.classList.toggle('open');
+    menu.setAttribute('aria-expanded', String(open));
+    menu.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
   });
-  addEventListener('keyup', function (e) {
-    if (e.key !== 'PrintScreen') return;
-    shield();
-    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText('').catch(function () {});
-  });
-
-  // rail: the menu button pins the section names open
-  var rail = document.getElementById('rail'), menu = document.getElementById('menu');
-  menu.addEventListener('click', function () { menu.setAttribute('aria-expanded', rail.classList.toggle('open')); });
 
   // hero role: types through the titles
   var typed = document.getElementById('typed'), roles = ['Senior Product Manager.', 'Product Leader.', 'Platform, Data & AI builder.'], r = 0, c = roles[0].length, del = true;
@@ -802,79 +214,106 @@ img { -webkit-user-drag: none; -webkit-touch-callout: none; }
   }
   if (!reduce) setTimeout(tick, 2600);
 
-  // highlight the current section; Career and Credentials share one section, so the open tab decides
-  var links = {}, tabs = [].slice.call(document.querySelectorAll('[role="tab"]')), current = '';
-  rail.querySelectorAll('.links a').forEach(function (a) { links[a.getAttribute('href').slice(1)] = a; });
+  // highlight the current section; a clicked link stays highlighted until its scroll settles
+  var links = {}, current = null, pinned = false, pinTimer;
+  nav.querySelectorAll('a').forEach(function (a) {
+    var id = a.getAttribute('href').slice(1);
+    links[id] = a;
+    a.addEventListener('click', function () { closeMenu(); pinned = true; pin(); mark(id); });
+  });
+  var ids = Object.keys(links);
   function mark(id) {
     current = id;
-    if (id === 'career' && tabs[1].getAttribute('aria-selected') === 'true') id = 'credentials';
-    Object.values(links).forEach(function (a) { a.classList.remove('on'); });
-    links[id].classList.add('on');
+    ids.forEach(function (k) { links[k].classList.toggle('on', k === id); });
   }
+  function pin() { clearTimeout(pinTimer); pinTimer = setTimeout(function () { pinned = false; }, 200); }
+  function spy() {
+    if (pinned) { pin(); return; }
+    var id = null;
+    ids.forEach(function (s) { if (document.getElementById(s).getBoundingClientRect().top <= innerHeight * .3) id = s; });
+    if (innerHeight + scrollY >= root.scrollHeight - 4) id = 'contact';
+    if (id !== current) mark(id);
+  }
+  addEventListener('scroll', spy, { passive: true });
+  addEventListener('resize', spy);
+  spy();
 
-  // resume tabs
-  function pick(t, focus) {
-    tabs.forEach(function (b) {
-      var on = b === t;
-      b.setAttribute('aria-selected', on);
-      b.tabIndex = on ? 0 : -1;
-      document.getElementById(b.getAttribute('aria-controls')).hidden = !on;
+  // selected work: tabs with arrow-key support
+  var wtabs = [].slice.call(document.querySelectorAll('.wtab')), wpanels = document.querySelectorAll('.wpanel');
+  function showWork(i, focus) {
+    wtabs.forEach(function (b, k) {
+      var on = k === i;
+      b.classList.toggle('on', on); b.setAttribute('aria-selected', String(on)); b.tabIndex = on ? 0 : -1;
+      wpanels[k].classList.toggle('on', on);
     });
-    if (focus) t.focus();
-    if (current === 'career') mark('career');
+    if (focus) wtabs[i].focus();
   }
-  tabs.forEach(function (b, k) {
-    b.addEventListener('click', function () { pick(b); });
+  wtabs.forEach(function (b, i) {
+    b.addEventListener('click', function () { showWork(i); });
     b.addEventListener('keydown', function (e) {
-      var d = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
-      if (d) pick(tabs[(k + d + tabs.length) % tabs.length], true);
+      var d = e.key === 'ArrowDown' || e.key === 'ArrowRight' ? 1 : e.key === 'ArrowUp' || e.key === 'ArrowLeft' ? -1 : 0;
+      if (d) { e.preventDefault(); showWork((i + d + wtabs.length) % wtabs.length, true); }
     });
   });
-  // links to Career or Credentials open the matching tab
-  if (location.hash === '#credentials') pick(tabs[1]);
-  document.querySelectorAll('a[href="#career"], a[href="#credentials"]').forEach(function (a) { a.addEventListener('click', function () { pick(tabs[a.getAttribute('href') === '#credentials' ? 1 : 0]); }); });
 
-  if ('IntersectionObserver' in window) {
-    var io = new IntersectionObserver(function (es) { es.forEach(function (en) { if (en.isIntersecting) mark(en.target.id); }); }, { rootMargin: '-45% 0px -50% 0px' });
-    ['top', 'expertise', 'results', 'products', 'career', 'interests', 'contact'].forEach(function (id) { io.observe(document.getElementById(id)); });
+  var qrail = document.getElementById('quoteRail');
+
+  // one dialog: a right drawer per discipline, a centred pop-up per recommendation
+  var modal = document.getElementById('modal'), mviews = modal.querySelectorAll('.mview'), qholdPaused = false;
+  function openModal(id) {
+    modal.classList.toggle('drawer', id.charAt(0) !== 'q');
+    mviews.forEach(function (v) {
+      var on = v.dataset.view === id;
+      v.hidden = !on;
+      if (on) modal.setAttribute('aria-labelledby', v.querySelector('h2').id);
+    });
+    qholdPaused = qrail.classList.contains('paused');
+    qrail.classList.add('paused');
+    modal.showModal();
+    modal.scrollTop = 0;
+  }
+  document.addEventListener('click', function (e) {
+    var t = e.target.closest('.xcard, .qmore');
+    if (t) openModal(t.dataset.view);
+  });
+  document.getElementById('modalClose').addEventListener('click', function () { modal.close(); });
+  modal.addEventListener('click', function (e) { if (e.target === modal) modal.close(); });
+  modal.addEventListener('close', function () { if (!qholdPaused) qrail.classList.remove('paused'); });
+
+  // recommendations carousel: drifts at a reading pace; stays a plain grid for reduced motion
+  var qtrack = document.getElementById('quoteTrack'), qpause = document.getElementById('quotePause');
+  if (!reduce) {
+    [].slice.call(qtrack.children).forEach(function (c) { var k = c.cloneNode(true); k.setAttribute('aria-hidden', 'true'); k.querySelectorAll('button').forEach(function (b) { b.tabIndex = -1; }); qtrack.appendChild(k); });
+    qrail.classList.add('auto');
+    function pace() { qtrack.style.setProperty('--dur', Math.round(qtrack.scrollWidth / 2 / 28) + 's'); }
+    pace(); addEventListener('resize', pace);
+    qpause.hidden = false;
+    qpause.addEventListener('click', function () { var p = qrail.classList.toggle('paused'); qpause.textContent = p ? 'Play' : 'Pause'; });
   }
 
-  // recommendations slider: snaps card by card, auto-advances, pauses on hover, focus or touch
-  (function () {
-    var track = document.getElementById('vtrack'); if (!track) return;
-    var cards = track.querySelectorAll('.vcard'), dots = document.getElementById('vdots'), t, mt;
-    function perView() { return innerWidth > 900 ? 2 : 1; }
-    function pages() { return Math.max(1, cards.length - perView() + 1); }
-    function cur() { return Math.round(track.scrollLeft / (cards[0].getBoundingClientRect().width + 22)); }
-    function dot() { var c = Math.min(cur(), pages() - 1); dots.querySelectorAll('button').forEach(function (b, k) { b.classList.toggle('on', k === c); }); }
-    function build() {
-      dots.innerHTML = '';
-      for (var k = 0; k < pages(); k++) { (function (k) { var b = document.createElement('button'); b.type = 'button'; b.setAttribute('aria-label', 'Show recommendation ' + (k + 1)); b.addEventListener('click', function () { go(k); restart(); }); dots.appendChild(b); })(k); }
-      dot();
-    }
-    function go(n) { var p = pages(); n = (n + p) % p; track.scrollTo({ left: cards[n].offsetLeft - cards[0].offsetLeft, behavior: reduce ? 'auto' : 'smooth' }); }
-    function stop() { clearInterval(t); }
-    function restart() { stop(); if (!reduce) t = setInterval(function () { go(cur() + 1); }, 7000); }
-    document.getElementById('vprev').addEventListener('click', function () { go(cur() - 1); restart(); });
-    document.getElementById('vnext').addEventListener('click', function () { go(cur() + 1); restart(); });
-    track.addEventListener('scroll', function () { clearTimeout(mt); mt = setTimeout(dot, 80); }, { passive: true });
-    ['mouseenter', 'focusin', 'touchstart'].forEach(function (e) { track.addEventListener(e, stop, { passive: true }); });
-    ['mouseleave', 'focusout'].forEach(function (e) { track.addEventListener(e, restart); });
-    track.addEventListener('keydown', function (e) { if (e.key === 'ArrowRight') { e.preventDefault(); go(cur() + 1); restart(); } if (e.key === 'ArrowLeft') { e.preventDefault(); go(cur() - 1); restart(); } });
-    addEventListener('resize', build);
-    build(); restart();
-  })();
+  // experience timeline: hovering, focusing or tapping a logo shows that role; the last one stays open for reading
+  var stops = [].slice.call(document.querySelectorAll('.xstop')), panels = document.querySelectorAll('.xpanel'), xwrap = document.getElementById('xpanels'), xt;
+  function showRole(i) {
+    stops.forEach(function (b, k) { b.classList.toggle('on', k === i); b.setAttribute('aria-expanded', String(k === i)); panels[k].classList.toggle('on', k === i); });
+    xwrap.style.setProperty('--i', i);
+  }
+  stops.forEach(function (b, i) {
+    b.addEventListener('pointerenter', function (e) { if (e.pointerType === 'mouse') { clearTimeout(xt); xt = setTimeout(function () { showRole(i); }, 90); } });
+    b.addEventListener('pointerleave', function () { clearTimeout(xt); });
+    b.addEventListener('focus', function () { showRole(i); });
+    b.addEventListener('click', function () { showRole(i); });
+  });
 
-  var toast = document.getElementById('toast'), tt;
+  // deterrent only: browsers cannot fully block saving images from a public page
+  addEventListener('dragstart', function (e) { if (e.target.tagName === 'IMG') e.preventDefault(); });
+
+  var toast = document.getElementById('toast'), tt, email = document.getElementById('email');
   function say(m) { toast.textContent = m; toast.classList.add('show'); clearTimeout(tt); tt = setTimeout(function () { toast.classList.remove('show'); }, 2000); }
-  var email = document.getElementById('email');
-  function copy() {
-    function fallback() { var r = document.createRange(); r.selectNodeContents(email); var s = getSelection(); s.removeAllRanges(); s.addRange(r); say('Address selected. Press Ctrl+C or ⌘C.'); }
+  document.getElementById('copyEmail').addEventListener('click', function () {
+    function fallback() { var g = document.createRange(); g.selectNodeContents(email); var s = getSelection(); s.removeAllRanges(); s.addRange(g); say('Address selected. Press Ctrl+C or ⌘C.'); }
     if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(email.textContent.trim()).then(function () { say('Email copied'); }, fallback);
     else fallback();
-  }
-  document.querySelectorAll('.copy').forEach(function (b) { b.addEventListener('click', copy); });
+  });
 })();
 </script>
-</body>
-</html>
+</body></html>
