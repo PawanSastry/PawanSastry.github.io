@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Pawan Sastry Portfolio</title>
 <meta name="description" content="Pawan Sastry, Senior Product Manager in Hyderabad. Data, analytics and AI products for B2B enterprise SaaS.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-zTyfH/L/YD0Yp9aU8zmTiUJbXRt4aqvRbpqQg7c9XH4=' 'sha256-i8JgAj8NjmNWyzzH/ThH01qXjW/Cp96wdk9T7nbeiXs='; style-src 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-zTyfH/L/YD0Yp9aU8zmTiUJbXRt4aqvRbpqQg7c9XH4=' 'sha256-79pOOW3ytSO6Ldod0kOxOqqqxRRKfmUWLQxDkbjljOQ='; style-src 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
 <meta name="theme-color" content="#1B2A63">
 <script>
@@ -145,6 +145,32 @@ section.sec { padding-top: 72px; }
 .prod .row span:last-child { font-size: 14px; color: var(--muted); }
 .prod .row .tag { background: var(--accent); color: var(--on-accent); padding: 0 8px; border-radius: 2px; letter-spacing: .03em; text-transform: none; font-size: 14px; }
 .prod .stat { font-size: 15.5px; font-weight: 700; color: var(--accent); }
+
+
+/* recommendations slider */
+.voices .vwrap { margin-top: 38px; }
+.vtrack { display: flex; gap: 22px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; padding: 4px 4px 30px; margin: -4px -4px -26px; }
+.vtrack::-webkit-scrollbar { display: none; }
+.vtrack:focus-visible { outline: 3px solid var(--lime); outline-offset: 2px; }
+.vcard { flex: 0 0 calc(50% - 11px); scroll-snap-align: start; padding: 30px 30px 26px; display: flex; flex-direction: column; gap: 18px; min-width: 0; }
+.vcard .qm { font-size: 76px; line-height: .55; height: 34px; font-weight: 700; color: var(--accent); font-family: Georgia, "Times New Roman", serif; }
+.vcard blockquote { margin: 0; font-size: 17px; line-height: 1.65; color: var(--text); flex: 1; }
+.vcard .by { display: flex; align-items: center; gap: 14px; border-top: 1px solid var(--line); padding-top: 18px; }
+.vcard .av { flex: none; width: 48px; height: 48px; border-radius: 50%; display: grid; place-items: center; font-weight: 700; font-size: 17px; background: var(--accent); color: var(--on-accent); }
+.vcard .vwho { display: grid; line-height: 1.35; min-width: 0; }
+.vcard .vwho b { font-weight: 700; font-size: 17px; color: var(--ink); }
+.vcard .vwho span { font-size: 15px; color: var(--muted); }
+.vctrl { display: flex; align-items: center; justify-content: center; gap: 18px; margin-top: 26px; }
+.vbtn { width: 46px; height: 46px; border: 0; background: var(--panel); color: var(--accent); box-shadow: var(--shadow); display: grid; place-items: center; cursor: pointer; transition: transform .2s; }
+.vbtn:hover { transform: translateY(-2px); }
+.vbtn svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+.vdots { display: flex; gap: 8px; }
+.vdots button { width: 9px; height: 9px; border-radius: 50%; border: 0; padding: 0; background: var(--slate); cursor: pointer; transition: width .3s, background .3s; }
+.vdots button.on { background: var(--lime); width: 26px; border-radius: 5px; }
+.vmore { text-align: center; margin: 18px 0 0; }
+.vmore a { font-size: 15px; font-weight: 600; color: var(--on-page-2); }
+.vmore a:hover { color: var(--lime); }
+@media (max-width: 900px) { .vcard { flex-basis: 100%; padding: 26px 22px 22px; } .vcard blockquote { font-size: 16.5px; } }
 
 /* resume */
 .tabs { display: flex; margin: 30px auto 0; width: fit-content; max-width: 100%; background: var(--panel); box-shadow: var(--shadow); }
@@ -518,6 +544,42 @@ img { -webkit-user-drag: none; -webkit-touch-callout: none; }
     </div>
   </section>
 
+  <section class="sec voices" id="voices">
+    <div class="inner">
+      <div class="head"><span>Recommendations</span><h2>What Colleagues Say</h2><p>From LinkedIn recommendations by the people I&rsquo;ve worked for.</p></div>
+      <div class="vwrap">
+        <div class="vtrack" id="vtrack" role="region" aria-label="Recommendations, use arrow keys to move" tabindex="0">
+        <article class="card vcard">
+          <span class="qm" aria-hidden="true">&ldquo;</span>
+          <blockquote>Pawan doesn&rsquo;t wait to be handed a roadmap &mdash; he builds one, grounded in real strategic thinking and backed by technical insight sharp enough to hold his own with any engineer in the room. &hellip; I&rsquo;ve told Pawan more than once that my job would be so much easier if I could just clone him. He&rsquo;s the real deal, and any team would be lucky to have him.</blockquote>
+          <div class="by"><span class="av" aria-hidden="true">JJ</span><span class="vwho"><b>Jennifer Jones</b><span>Director of Product Management &middot; Managed Pawan at RealPage</span></span></div>
+        </article>
+        <article class="card vcard">
+          <span class="qm" aria-hidden="true">&ldquo;</span>
+          <blockquote>He&rsquo;s one of the strongest technical contributors I&rsquo;ve worked with. What sets him apart is that he never just executes what&rsquo;s been asked, but he consistently identified improvement opportunities to nurturing and user management workflows before anyone else pointed them out, and then followed through with thoroughness to actually build them.</blockquote>
+          <div class="by"><span class="av" aria-hidden="true">JA</span><span class="vwho"><b>Jon Ames</b><span>Product, RealPage &middot; Managed Pawan directly</span></span></div>
+        </article>
+        <article class="card vcard">
+          <span class="qm" aria-hidden="true">&ldquo;</span>
+          <blockquote>Pawan managed several critical areas within the Knock CRM portfolio, including platform and data analytics. He demonstrated strong execution capabilities, effectively leading large engineering teams to deliver meaningful business outcomes&hellip; One of Pawan&rsquo;s key strengths is his proactive approach to understanding customer and stakeholder needs.</blockquote>
+          <div class="by"><span class="av" aria-hidden="true">NM</span><span class="vwho"><b>Neeraj Mishra</b><span>Director of Product Management &middot; Reporting manager at RealPage</span></span></div>
+        </article>
+        <article class="card vcard">
+          <span class="qm" aria-hidden="true">&ldquo;</span>
+          <blockquote>Pawan took ownership of the product vision for the Front Office Data Engineering initiatives, aligning complex data-driven solutions with enterprise-wide goals and long-term customer success metrics. What stood out most was Pawan&rsquo;s ability to navigate across departments, build consensus, and move projects forward without needing constant oversight.</blockquote>
+          <div class="by"><span class="av" aria-hidden="true">RR</span><span class="vwho"><b>Reed Rawhouser</b><span>Product leader &middot; Managed Pawan at RealPage</span></span></div>
+        </article>
+        </div>
+        <div class="vctrl">
+          <button class="vbtn" id="vprev" type="button" aria-label="Previous recommendation"><svg viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg></button>
+          <div class="vdots" id="vdots"></div>
+          <button class="vbtn" id="vnext" type="button" aria-label="Next recommendation"><svg viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg></button>
+        </div>
+        <p class="vmore"><a href="https://www.linkedin.com/in/pawan-sastry-01442537/" target="_blank" rel="noopener">Read all recommendations on LinkedIn &rarr;</a></p>
+      </div>
+    </div>
+  </section>
+
   <section class="sec" id="career">
     <div class="inner">
       <div class="head"><span>15 years, five companies</span><h2>My Resume</h2><p>From Associate Product Manager to Senior Product Manager. Open a role for details.</p></div>
@@ -776,6 +838,32 @@ img { -webkit-user-drag: none; -webkit-touch-callout: none; }
     var io = new IntersectionObserver(function (es) { es.forEach(function (en) { if (en.isIntersecting) mark(en.target.id); }); }, { rootMargin: '-45% 0px -50% 0px' });
     ['top', 'expertise', 'results', 'products', 'career', 'interests', 'contact'].forEach(function (id) { io.observe(document.getElementById(id)); });
   }
+
+  // recommendations slider: snaps card by card, auto-advances, pauses on hover, focus or touch
+  (function () {
+    var track = document.getElementById('vtrack'); if (!track) return;
+    var cards = track.querySelectorAll('.vcard'), dots = document.getElementById('vdots'), t, mt;
+    function perView() { return innerWidth > 900 ? 2 : 1; }
+    function pages() { return Math.max(1, cards.length - perView() + 1); }
+    function cur() { return Math.round(track.scrollLeft / (cards[0].getBoundingClientRect().width + 22)); }
+    function dot() { var c = Math.min(cur(), pages() - 1); dots.querySelectorAll('button').forEach(function (b, k) { b.classList.toggle('on', k === c); }); }
+    function build() {
+      dots.innerHTML = '';
+      for (var k = 0; k < pages(); k++) { (function (k) { var b = document.createElement('button'); b.type = 'button'; b.setAttribute('aria-label', 'Show recommendation ' + (k + 1)); b.addEventListener('click', function () { go(k); restart(); }); dots.appendChild(b); })(k); }
+      dot();
+    }
+    function go(n) { var p = pages(); n = (n + p) % p; track.scrollTo({ left: cards[n].offsetLeft - cards[0].offsetLeft, behavior: reduce ? 'auto' : 'smooth' }); }
+    function stop() { clearInterval(t); }
+    function restart() { stop(); if (!reduce) t = setInterval(function () { go(cur() + 1); }, 7000); }
+    document.getElementById('vprev').addEventListener('click', function () { go(cur() - 1); restart(); });
+    document.getElementById('vnext').addEventListener('click', function () { go(cur() + 1); restart(); });
+    track.addEventListener('scroll', function () { clearTimeout(mt); mt = setTimeout(dot, 80); }, { passive: true });
+    ['mouseenter', 'focusin', 'touchstart'].forEach(function (e) { track.addEventListener(e, stop, { passive: true }); });
+    ['mouseleave', 'focusout'].forEach(function (e) { track.addEventListener(e, restart); });
+    track.addEventListener('keydown', function (e) { if (e.key === 'ArrowRight') { e.preventDefault(); go(cur() + 1); restart(); } if (e.key === 'ArrowLeft') { e.preventDefault(); go(cur() - 1); restart(); } });
+    addEventListener('resize', build);
+    build(); restart();
+  })();
 
   var toast = document.getElementById('toast'), tt;
   function say(m) { toast.textContent = m; toast.classList.add('show'); clearTimeout(tt); tt = setTimeout(function () { toast.classList.remove('show'); }, 2000); }
